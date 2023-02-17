@@ -22,7 +22,9 @@ header {
     top: 0;
     left: 0;
 }
-
+.logo{
+    width: 100px;
+}
 .logo>h1 {
     font-size: 20px;
 }
@@ -90,7 +92,10 @@ main {
     background: #F7F7F7;
     border-radius: 20px;
 }
-
+.arrow{
+    width: 15px;
+height: 15px;
+}
 .hero-button-1-1 {
     display: flex;
     color: #fff;
@@ -147,5 +152,5 @@ color: #fff;
 }
 .hero-image {
     border-radius: 10px;
-    width: 600px;
+    width: 500px;
 }
