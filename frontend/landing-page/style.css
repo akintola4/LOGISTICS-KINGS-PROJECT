@@ -12,9 +12,9 @@ body {
 header {
     display: flex;
     width: 100%;
-    margin: 0 4%;
+    padding: 0 3%;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     height: 100px;
@@ -22,8 +22,11 @@ header {
     top: 0;
     left: 0;
 }
+.logo-section{
+    width: 200px;
+}
 .logo{
-    width: 100px;
+    width: 200px;
 }
 .logo>h1 {
     font-size: 20px;
