@@ -11,39 +11,21 @@ body {
 /* should be working now  */
 
 .hero-button-1 {
-    
+    font-size: 12px;
     
     background: #F7F7F7;
 }
-.arrow{
-    width: 15px;
-height: 15px;
-}
-.hero-button-1-1 {
-    display: flex;
-    color: #fff;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 3px 12px;
-    gap: 10px;
+.hero-new{
     background-color: #3E4095;
-    border-radius: 20px;
-    width: 48px;
-    height: 24px;
+    color: #fff;
 }
-
-.hero>h1 {
-    width: 655px;
-    margin-top: 20px;
-    height: 147px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
+.login{
+    color: #3E4095;
+    border-color: #3E4095;
 }
-
-.hero-button-2 {
-    width: 562px;
-    height: 60px;
+.login:hover{
+    color: #fff;
+    background-color: #3E4095;
 }
 
 .hero-button-2-1 {
@@ -53,7 +35,7 @@ height: 15px;
 }
 
 .hero-button-2-2{
-
+margin-left: 10px;
 border: #3E4095;
 background-color: #3E4095;
 }
@@ -64,5 +46,5 @@ background-color: #3E4095;
 }
 .hero-image {
     border-radius: 10px;
-    width: 500px;
+    width: 100%;
 }
