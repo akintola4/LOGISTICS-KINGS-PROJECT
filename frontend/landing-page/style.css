@@ -39,6 +39,9 @@ margin-left: 10px;
 border: #3E4095;
 background-color: #3E4095;
 }
+.purple{
+    color: #3E4095;
+}
 .hero-button-2-2:hover{
     background-color: #fff;
     border:2px solid #3E4095;
