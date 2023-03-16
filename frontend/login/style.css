@@ -9,7 +9,9 @@ body {
     font-family: 'Manrope';
     background-color: #fff;
 }
-
+.main{
+    padding: 0%;
+}
 .login{
     color: #3E4095;
     border-color: #3E4095;
@@ -32,6 +34,7 @@ form{
 
 
 @media (max-width:900px) {
+    
     .login-image{
         display: none;
     }
