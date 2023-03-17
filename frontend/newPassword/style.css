@@ -11,7 +11,6 @@ body {
 }
 .main{
     padding: 0%;
-   
 }
 .login{
     color: #3E4095;
@@ -22,7 +21,7 @@ body {
     background-color: #3E4095;
 }
 form{
-    padding: 10%;
+    padding: 20%;
 }
 
 .login-image {
@@ -32,19 +31,24 @@ form{
 .purple {
     color: #3E4095;
 }
-
+/* .fa-eye{
+    position: absolute;
+    top: 56%;
+    right: 13%;
+    cursor: pointer;
+    color: lightgray;
+} */
 .input-group-text{
     background-color: #fff;
     border-radius: 0.5rem;
 }
-.input-group>.form-control{
+.form-control{
     border-right:1px solid #fff; ;
     border-radius: 0.5rem;
 }
 #eye{
     cursor: pointer;
 }
-
 @media (max-width:900px) {
     
     .login-image{
@@ -52,14 +56,13 @@ form{
     }
     .section-1{
         display: block;
-        padding-top: 50px;
-       
+        padding-top: 40%;
          margin: auto;
-      
+        height: 100vh;
         
     }
     .form-body{
-        padding: 10px;
+        padding: 0;
     }
     form{
         padding: 0%;

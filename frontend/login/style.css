@@ -31,7 +31,17 @@ form{
 .purple {
     color: #3E4095;
 }
-
+.input-group-text{
+    background-color: #fff;
+    border-radius: 0.5rem;
+}
+.input-group>.form-control{
+    border-right:1px solid #fff; ;
+    border-radius: 0.5rem;
+}
+#eye{
+    cursor: pointer;
+}
 
 @media (max-width:900px) {
     
