@@ -1,64 +1,92 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RESET PASSWORD</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RESET PASSWORD</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Manrope:wght@400;600;900&display=swap"
-        rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Manrope:wght@400;600;900&display=swap"
+    rel="stylesheet">
 
-    <link rel="shortcut icon" href="../src/logo.png" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="../fontawesome-free-6.3.0-web/css/fontawesome.css" rel="stylesheet">
-    <link href="../fontawesome-free-6.3.0-web/css/brands.css" rel="stylesheet">
-    <link href="../fontawesome-free-6.3.0-web/css/solid.css" rel="stylesheet">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="../src/logo.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="../fontawesome-free-6.3.0-web/css/fontawesome.css" rel="stylesheet">
+  <link href="../fontawesome-free-6.3.0-web/css/brands.css" rel="stylesheet">
+  <link href="../fontawesome-free-6.3.0-web/css/solid.css" rel="stylesheet">
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <main class="main container-fluid">
-        <section class=" section-1 row align-items-center introduction">
-            <div class="col image-side">
-                <img class="login-image" src="../src/design-side.png"  alt="">
+  <main class="main container-fluid">
+    <section class=" section-1 row align-items-center introduction">
+      <div class="col image-side">
+        <img class="login-image" src="../src/design-side.png" alt="">
+
+      </div>
+      <div class="col p-5">
+
+        <div class="mb-3 form-body ">
+          <form class="margin-auto">
+            <p>Hey there 👋</p>
+            <p class="fw-bold fs-3">Reset your password</p>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control rounded-3 form-control-lg" placeholder="dom@mail.com"
+                id="exampleInputEmail1" aria-describedby="emailHelp" required="">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              <div class="invalid-feedback">
+                Valid email is required.
+              </div>
+            </div>
+
+            <div class="mb-3 row align-items-center ">
+              <a class="link purple col text-decoration-none" href="../login/index.html">Go back</a>
 
             </div>
-            <div class="col p-5">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn col-12  rounded-3 btn-lg login " data-bs-toggle="modal"
+              data-bs-target="#exampleModal" id="liveToastBtn">Get Reset Link  </button>
 
-              <div class="mb-3 form-body ">
-                <form class="margin-auto" >
-                    <p>Hey there 👋</p>
-                    <p class="fw-bold fs-3">Reset your password</p>
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control rounded-3 form-control-lg" placeholder="dom@mail.com" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Reset your password</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
+                  <div class="modal-body">
+                    <p>The reset link has been sent, Please check your Email</p>
+                  </div>
+                  <div class="modal-footer">
+                    <a class="btn rounded-3  login " data-bs-toggle="modal"
+            data-bs-target="#exampleModal" id="liveToastBtn"  href="../newPassword/index.html">Close </a>
                   
-                  <div class="mb-3 row align-items-center ">
-                    <a class="link purple col text-decoration-none" href="../login/index.html">Go back</a>
-                    
-                  </div> 
-                  <button type="submit" class="btn col-12 rounded-3 btn-lg login ">Get Reset Link</button>
-                </form>
-                
-              </div>  
-              
+                  </div>
+                </div>
+              </div>
             </div>
 
-        </section>
+          </form>
 
-    </main>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
 
 
-    <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="../bootstrap/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
