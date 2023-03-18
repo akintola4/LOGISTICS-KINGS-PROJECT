@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #000;
+    font-family: 'Manrope';
+    background-color: #fff;
+}
+
+
+.hero-button-1 {
+    font-size: 12px;
+    
+    background: #F7F7F7;
+}
+.hero-new{
+    background-color: #3E4095;
+    color: #fff;
+}
+.login{
+    color: #3E4095;
+    border-color: #3E4095;
+}
+.login:hover{
+    color: #fff;
+    background-color: #3E4095;
+}
+
+.hero-button-2-1 {
+    background: #F6F6F6;
+    border: #F6F6F6;
+    border-radius: 10px;
+}
+
+.hero-button-2-2{
+margin-left: 10px;
+border: #3E4095;
+background-color: #3E4095;
+}
+.purple{
+    color: #3E4095;
+}
+.hero-button-2-2:hover{
+    background-color: #fff;
+    border:2px solid #3E4095;
+    color: #3E4095;
+}
+.hero-image {
+    border-radius: 10px;
+    width: 100%;
+}
