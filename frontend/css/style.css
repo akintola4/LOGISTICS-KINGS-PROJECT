@@ -51,3 +51,18 @@ background-color: #3E4095;
     border-radius: 10px;
     width: 100%;
 }
+.sidebar-2{
+    display: none !important;
+}
+@media (max-width:900px) {
+    
+    .sidebar-1{
+        display: none !important; 
+    }
+    .sidebar-2{
+        display: block !important;
+    }
+    .profile{
+        margin-top: 540px !important;
+    }
+ }
