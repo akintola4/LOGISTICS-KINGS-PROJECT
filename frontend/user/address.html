@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>History</title>
+    <title>address</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,7 +38,7 @@
             <hr>
             <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item">
-                    <a href="#" class="nav-link active" aria-current="page">
+                    <a href="#" class="nav-link hero-button-2-2  purple-btn" aria-current="page">
 
                         <i class="fa fa-home me-2" width="16" height="16" aria-hidden="true"></i>
                         Home
@@ -154,7 +154,7 @@
 
                             </div>
                             <div class="mb-3">
-                                <label for="packageLocation" class="form-label">Package Location</label>
+                                <label for="packageLocation" class="form-label">Delivery Location</label>
                                 <select class="form-select rounded-3 form-control-lg" id="packageLocation" required="">
                                     
                                         <option>State in Nigeria</option>
@@ -201,12 +201,64 @@
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Number of sender</label>
+                                <label for="exampleInputEmail1" class="form-label">Reciever Number</label>
                                 <input type="text" class="form-control rounded-3 form-control-lg" placeholder=""
                                     value="" required="">
 
                             </div>
+                            <div class="row mb-3 g-3">
+                                <div class="col-sm-6">
+                                  <label for="phoneNumber" class="form-label">Product Type</label>
+                                 
+                                  <select class="form-select" id="deliveryMethod" required="">
+                                    <option value="">Choose...</option>
+                                    <option>Food / Vegetables</option>
+                                    <option>Extremely Fragile/Expensive </option>
+                                    <option>Standard item </option>
+                                    
+                                    
+                                  
+                                  </select>
+                                  <div class="invalid-feedback">
+                                    Valid Product Type is required.
+                                  </div>
+                                </div>
+                                <div class="col-sm-6">
+                                  <label for="deliveryMethod" class="form-label">Time Frame</label>
+                                  <select class="form-select" id="deliveryMethod" required="">
+                                    <option value="">Choose...</option>
+                                    <option>1 Day</option>
+                                    <option>2 Day</option>
+                                    <option>3 Day</option>
+                                    <option>7 Day</option>
+                                    
+                                  
+                                  </select>
+                                  <div class="invalid-feedback">
+                                    Please select a valid Time Frame.
+                                  </div>
+                                  </div>
+                                </div>
 
+                                <div class="row">
+                                    <div class="col-sm-6 mb-3 ">
+                                        <label for="phoneNumber" class="form-label">Type of delivery vechicle</label>
+                                       
+                                        <select class="form-select" id="deliveryMethod" required="">
+                                          <option value="">Choose...</option>
+                                          <option>Motocycle</option>
+                                          <option>Delivery Car </option>
+                                          <option>Delivery Truck</option>
+                                          
+                                          
+                                        
+                                        </select>
+                                        <div class="invalid-feedback">
+                                          Valid Type of delivery vechicle is required.
+                                        </div>
+                                      </div>
+                                </div>
+                                
                             <button type="submit" class="btn col-12 btn-lg rounded-3 login ">Next</button>
                         </form>
 
@@ -214,48 +266,11 @@
 
                 </div>
             </section>
-            <section class="section-2 col-md-4">
-                <p class="fw-bold fs-3">Select From History</p>
-                <div class="col pb-3">
-
-                    <div class=" row pb-3">
-                        <div class=" col-sm-3 btn">
-                            <img src="../src/user-image.png" width="50px" alt="">
-                        </div>
-                        <div class="col">
-                            <h5 class="card-title">Dominic Praise</h5>
-                            <p class="card-text location"> Ajah, Lagos</p>
-                            <p class="card-text phoneNumber">08069091054</p>
-         
-                        </div>
-                    </div>
-
-                    <div class=" row pb-3">
-                        <div class=" col-sm-3 btn">
-                            <img src="../src/user-image.png" width="50px" alt="">
-                        </div>
-                        <div class="col">
-                            <h5 class="card-title">Dominic Praise</h5>
-                            <p class="card-text location"> Ajah, Lagos</p>
-                            <p class="card-text phoneNumber">08069091054
-                            </p>
-
-                        </div>
-                    </div>
-
-                    <div class=" row pb-3">
-                        <div class=" col-sm-3 btn">
-                            <img src="../src/user-image.png" width="50px" alt="">
-                        </div>
-                        <div class="col">
-                            <h5 class="card-title">Dominic Praise</h5>
-                            <p class="card-text location"> Ajah, Lagos</p>
-                            <p class="card-text phoneNumber">08069091054
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
+            <section class="section-2 col-md-4 text-center">
+                <button class="btn"> <i class="fa fa-plus-circle purple display-1" aria-hidden="true" ></i></button>
+               
+                <p class="fw-bold fs-3">Bulk delivery </p>
+               
       
             </div>
   
