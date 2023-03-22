@@ -44,10 +44,12 @@ body {
 }
 .purple-btn{
     background-color: #3E4095 !important;
-    color: #3E4095;
+    
     border: 2px solid #3E4095;
     color: #fff;
 }
+.purple-btn:hover{
+color: #fff;}
 .purple {
     color: #3E4095;
 }
@@ -105,7 +107,7 @@ main {
 .rating>label {
     position: relative;
     width: 1em;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 300;
     color: #FFA500;
     cursor: pointer
@@ -129,7 +131,10 @@ main {
 .rating:hover>input:checked~label:before {
     opacity: 0.4
 }
-
+.border-main{
+  
+border-bottom: 30px #fff solid ;
+}
 @media (max-width:900px) {
 
     .sidebar-1 {

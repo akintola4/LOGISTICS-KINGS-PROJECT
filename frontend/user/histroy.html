@@ -38,7 +38,7 @@
             <hr>
             <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item">
-                    <a href="#" class="nav-link active" aria-current="page">
+                    <a href="#" class="nav-link link-dark" aria-current="page">
 
                         <i class="fa fa-home me-2" width="16" height="16" aria-hidden="true"></i>
                         Home
@@ -52,8 +52,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link link-dark">
-                        <i class="fa fa-history me-2" width="16" height="16" aria-hidden="true"></i>
+                    <a href="#" class="nav-link purple-btn">
+                        <i class="fa fa-history me-2 " width="16" height="16" aria-hidden="true"></i>
                         History
                     </a>
                 </li>
@@ -86,13 +86,13 @@
         <div class="d-flex sidebar-2 flex-column flex-shrink-0 bg-light" style="width: 4.5rem; height:100vh;">
             <a href="/" class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none "
                 data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only">
-                <i class="fa fa-dashboard " width="40" height="32" aria-hidden="true"></i>
+                <i class="fa fa-dashboard purple" width="40" height="32" aria-hidden="true"></i>
                 <span class="visually-hidden">Icon-only</span>
 
             </a>
             <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
                 <li class="nav-item">
-                    <a href="#" class="nav-link active py-3 border-bottom rounded-0" aria-current="page"
+                    <a href="#" class="nav-link purple-btn py-3 border-bottom rounded-0" aria-current="page"
                         data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Home"
                         data-bs-original-title="Home">
 
@@ -102,18 +102,19 @@
                 <li>
                     <a href="#" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip"
                         data-bs-placement="right" aria-label="Dashboard" data-bs-original-title="Dashboard">
-                        <i class="fa fa-calendar " width="24" height="24" role="img" aria-hidden="true"></i></a>
+                        <i class="fa fa-calendar purple " width="24" height="24" role="img" aria-hidden="true"></i></a>
                 </li>
                 <li>
                     <a href="#" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip"
                         data-bs-placement="right" aria-label="Orders" data-bs-original-title="Orders">
-                        <i class="fa fa-history me-2" width="24" height="24" role="img" aria-hidden="true"></i>
+                        <i class="fa fa-history me-2 purple" width="24" height="24" role="img" aria-hidden="true"></i>
                     </a>
                 </li>
                 <li>
                     <a href="#" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip"
                         data-bs-placement="right" aria-label="Products" data-bs-original-title="Products">
-                        <i class="fa-solid fa-money-bill me-2" width="24" height="24" role="img" aria-hidden="true"></i>
+                        <i class="fa-solid fa-money-bill me-2 purple" width="24" height="24" role="img"
+                            aria-hidden="true"></i>
                     </a>
                 </li>
 
@@ -136,129 +137,75 @@
             </div>
         </div>
     </header>
-    <main class="d-flex  flex-column flex-shrink-0" >
+    <main class="d-flex  flex-column flex-shrink-0">
 
-        <div class="row content">
-            <section class="section-1 col">
-                <div class="col">
+        <div class="row container justify-content-center pt-5">
+            <section class="row">
+                <p class="col-8">History <i class="fa fa-history" aria-hidden="true"></i></p>
+                <div class="col-4">
+                    <div class="row">
 
-                    <div class="mb-3 form-body ">
-
-                        <form class="margin-auto">
-                            <p>Hey there 👋</p>
-                            <p class="fw-bold fs-3">Place a delivery order</p>
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Name of sender</label>
-                                <input type="text" class="form-control rounded-3 form-control-lg" placeholder=""
-                                    value="" required="">
-
-                            </div>
-                            <div class="mb-3">
-                                <label for="packageLocation" class="form-label">Package Location</label>
-                                <select class="form-select rounded-3 form-control-lg" id="packageLocation" required="">
-                                    
-                                        <option>State in Nigeria</option>
-                                        <option value="Abuja FCT">Abuja FCT</option>
-                                        <option value="Abia">Abia</option>
-                                        <option value="Adamawa">Adamawa</option>
-                                        <option value="Akwa Ibom">Akwa Ibom</option>
-                                        <option value="Anambra">Anambra</option>
-                                        <option value="Bauchi">Bauchi</option>
-                                        <option value="Bayelsa">Bayelsa</option>
-                                        <option value="Benue">Benue</option>
-                                        <option value="Borno">Borno</option>
-                                        <option value="Cross River">Cross River</option>
-                                        <option value="Delta">Delta</option>
-                                        <option value="Ebonyi">Ebonyi</option>
-                                        <option value="Edo">Edo</option>
-                                        <option value="Ekiti">Ekiti</option>
-                                        <option value="Enugu">Enugu</option>
-                                        <option value="Gombe">Gombe</option>
-                                        <option value="Imo">Imo</option>
-                                        <option value="Jigawa">Jigawa</option>
-                                        <option value="Kaduna">Kaduna</option>
-                                        <option value="Kano">Kano</option>
-                                        <option value="Katsina">Katsina</option>
-                                        <option value="Kebbi">Kebbi</option>
-                                        <option value="Kogi">Kogi</option>
-                                        <option value="Kwara">Kwara</option>
-                                        <option value="Lagos">Lagos</option>
-                                        <option value="Nassarawa">Nassarawa</option>
-                                        <option value="Niger">Niger</option>
-                                        <option value="Ogun">Ogun</option>
-                                        <option value="Ondo">Ondo</option>
-                                        <option value="Osun">Osun</option>
-                                        <option value="Oyo">Oyo</option>
-                                        <option value="Plateau">Plateau</option>
-                                        <option value="Rivers">Rivers</option>
-                                        <option value="Sokoto">Sokoto</option>
-                                        <option value="Taraba">Taraba</option>
-                                        <option value="Yobe">Yobe</option>
-                                        <option value="Zamfara">Zamfara</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                    Please select a valid Delivery Method.
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Number of sender</label>
-                                <input type="text" class="form-control rounded-3 form-control-lg" placeholder=""
-                                    value="" required="">
-
-                            </div>
-
-                            <button type="submit" class="btn col-12 btn-lg rounded-3 login ">Next</button>
-                        </form>
-
-                    </div>
-
-                </div>
-            </section>
-            <section class="section-2 col-md-4">
-                <p class="fw-bold fs-3">Select From History</p>
-                <div class="col pb-3">
-
-                    <div class=" row pb-3">
-                        <div class=" col-sm-3 btn">
-                            <img src="../src/user-image.png" width="50px" alt="">
-                        </div>
+                        <input type="date" class="col form-control" name="" id="">
                         <div class="col">
-                            <h5 class="card-title">Dominic Praise</h5>
-                            <p class="card-text location"> Ajah, Lagos</p>
-                            <p class="card-text phoneNumber">08069091054</p>
-         
-                        </div>
-                    </div>
-
-                    <div class=" row pb-3">
-                        <div class=" col-sm-3 btn">
-                            <img src="../src/user-image.png" width="50px" alt="">
-                        </div>
-                        <div class="col">
-                            <h5 class="card-title">Dominic Praise</h5>
-                            <p class="card-text location"> Ajah, Lagos</p>
-                            <p class="card-text phoneNumber">08069091054
-                            </p>
-
-                        </div>
-                    </div>
-
-                    <div class=" row pb-3">
-                        <div class=" col-sm-3 btn">
-                            <img src="../src/user-image.png" width="50px" alt="">
-                        </div>
-                        <div class="col">
-                            <h5 class="card-title">Dominic Praise</h5>
-                            <p class="card-text location"> Ajah, Lagos</p>
-                            <p class="card-text phoneNumber">08069091054
-                            </p>
-
+                            <select class="form-select " aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">Last 7 Days</option>
+                                <option value="2">Last month</option>
+                                <option value="3">Last 6 months</option>
+                            </select>
                         </div>
                     </div>
                 </div>
-      
-            </div>
-  
+            </section>
+            <section class="row justify-content-center pt-5">
+
+                <div class="table-responsive row align-items-center">
+                    <table class="table table-hover table-borderless bg-light ">
+                        <thead >
+                            <tr class=" border-main">
+                                <th scope="col">#</th>
+                                <th scope="col">Company</th>
+                                <th scope="col">Pickup location</th>
+                                <th scope="col">Delivery location</th>
+                                <th scope="col">Ride</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody >
+                            
+                            <tr class=" border-main">
+                                <th scope="row">1</th>
+                                <td>A-Logistics</td>
+                                <td>Ajah, lagos</td>
+                                <td>@Ikeja, lagos</td>
+                                <td>@Delivery car</td>
+                                <td>@03 Feb, 2023</td>
+                                <td>@N5000</td>  
+                            </tr>
+                            
+                            <tr class=" border-main">
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                                <td>@fat</td>
+                                <td>@fat</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr class=" border-main ">
+                                <th scope="row">3</th>
+                                <td>Larry the Bird</td>
+                                <td>Larry the Bird</td>
+                                <td>@twitter</td>
+                                <td>@twitter</td>
+                                <td>@twitter</td>
+                                <td>@twitter</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
 
             </section>
 
