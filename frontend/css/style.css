@@ -184,4 +184,7 @@ border-bottom: 30px #fff solid ;
    #image{
     width: 100% !important;
    }
+   .fs-12{
+    font-size: 12px;
+   }
 }
