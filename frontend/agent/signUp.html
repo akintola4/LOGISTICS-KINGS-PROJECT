@@ -1,0 +1,117 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Manrope:wght@400;600;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="../src/logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="../fontawesome-free-6.3.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="../fontawesome-free-6.3.0-web/css/brands.css" rel="stylesheet">
+    <link href="../fontawesome-free-6.3.0-web/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/auth.css">
+</head>
+
+<body>
+
+    <main class="main container-fluid">
+        <section class=" section-1 row align-items-center introduction">
+            <div class="col image-side">
+                <img class="login-image" src="../src/design-side.png"  alt="">
+
+            </div>
+            <div class="col">
+              <div class="mb-3 form-body ">
+                <form class="margin-auto " >
+                    <p>Welcome 👋</p>
+                    <p class="fw-bold fs-3">Create your account</p>
+                    <div class="row mb-3 g-3">
+                      <div class="col-sm-6">
+                        <label for="firstName" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                          Valid first name is required.
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <label for="lastName" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                          Valid last name is required.
+                        </div>
+                      </div>
+                    </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control form-control-lg" placeholder="dom@mail.com" id="exampleInputEmail1" aria-describedby="emailHelp" required="">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    <div class="invalid-feedback">
+                      Valid email is required.
+                    </div>
+                  </div>
+                  <div class="row mb-3 g-3">
+                    <div class="col-sm-6">
+                      <label for="phoneNumber" class="form-label">Phone Number</label>
+                      <input type="text" class="form-control" id="phoneNumber" placeholder="" value="" required="">
+                      <div class="invalid-feedback">
+                        Valid Phone Number is required.
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="deliveryMethod" class="form-label">Delivery Method</label>
+                      <select class="form-select" id="deliveryMethod" required="">
+                        <option value="">Choose...</option>
+                        <option>Motocycle</option>
+                        <option>Delivery Car</option>
+                        <option>Delivery Truck</option>
+                      
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a valid Delivery Method.
+                      </div>
+                      </div>
+                    </div>
+                  
+                 
+                  <div class="mb-3">
+                    <label for="InputPassword1" class="form-label">Password</label>
+                    <div class="input-group ">
+                      <input type="password" class="form-control InputPassword1 form-control-lg" required="" id="password1">
+                      <span class="input-group-text ">
+                        <i class="fa fa-eye " id="eye1" onclick="eyeClick()" aria-hidden="true"></i>
+                      </span>
+                    </div> 
+                    <div class="invalid-feedback">
+                      Valid Password is required.
+                    </div>
+                  </div>
+                  <div class="mb-3 row align-items-center ">
+                    <a class="link purple col text-decoration-none" href="../login/index.html">Already have an account?</a>
+                    
+                  </div> 
+                  <button type="submit" class="btn col-12 btn-lg login ">Create an Account</button>
+                </form>
+                
+              </div>  
+              
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="../javscripts/eye.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

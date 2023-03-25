@@ -177,53 +177,48 @@
                             <img src="../src/avatar.jpg" alt="" width="50px" class="rounded-circle me-2">
                         </div>
                     </div>
-                    <div class="chats">
-                        <div class="chat-history gap-3 ">
-                            
-                                <p class="bg-light row rounded-4 p-3 col-6  ">
-                                    <label class="senderName" for=""><i class="fa-regular fa-user p-2"></i> Sender</label>
-                                    Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra maliquet amet,
-                                    ut consectetur diam urna sed. Cras odio eu cursus aiaculis. Sagittis etiam enim quis
-                                    eulectus commo vel scelerisqe nibh. Risus, magnis ornare vitae volutpat eget auctor.
-                                    Curabitur mi nunc neque. Vitae elit pellentesque non a cursus dolor egestas.
-                                </p>
-                                <p class="bg-light row rounded-4 p-3 col-6 justify-content-end  ">
-                                    Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra maliquet amet,
-                                    ut consectetur diam urna sed. Cras odio eu cursus aiaculis. Sagittis etiam enim quis
-                                    eulectus commo vel scelerisqe nibh. Risus, magnis ornare vitae volutpat eget auctor.
-                                    Curabitur mi nunc neque. Vitae elit pellentesque non a cursus dolor egestas.
-                                </p>
-                                
-                            
-                            <div class="user row justify-content-end">
-                                
-                                <p class="bg-light row rounded-4 p-3 col-6  ">
-                                    <label class="userName" for=""><i class="fa-regular fa-user p-2"></i> User</label>
-                                    Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra maliquet amet,
-                                    ut consectetur diam urna sed. Cras odio eu cursus aiaculis. Sagittis etiam enim quis
-                                    eulectus commo vel scelerisqe nibh. Risus, magnis ornare vitae volutpat eget auctor.
-                                    Curabitur mi nunc neque. Vitae elit pellentesque non a cursus dolor egestas.
-                                </p>
-                            </div>
-                           
-                            
-                        </div>
-
-                        <div class="chat-input justify-content-center row">
-                            <div class="col-8">
-                                <div id="emailHelp" class="form-text">We'll never share your chats with anyone else.
+                    <div class="">
+                        <div class="chats " id="chats">
+                            <div class="chat-history gap-3 ">
+                                <div class="sender d-flex flex-row justify-content-start mb-4">
+                                    <p class="bg-light row rounded-4 p-3 col-lg-6  ">
+                                        <label class="senderName" for=""><i class="fa-regular fa-user p-2"></i>
+                                            Sender</label>
+                                        Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra maliquet
+                                        amet,
+                                        ut consectetur diam urna sed. Cras odio eu cursus aiaculis. Sagittis etiam enim quis
+                                        eulectus commo vel scelerisqe nibh. Risus, magnis ornare vitae volutpat eget auctor.
+                                        Curabitur mi nunc neque. Vitae elit pellentesque non a cursus dolor egestas.
+                                    </p>
+    
                                 </div>
-                                <input type="email" class="form-control" id="input1" aria-describedby="chatHelp">
-                                
+                                <div class="user d-flex flex-row justify-content-end mb-4">
+                                    <p class="bg-light row rounded-4 p-3 col-lg-6  ">
+                                        <label class="userName" for=""><i class="fa-regular fa-user p-2"></i> User</label>
+                                        Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra maliquet
+                                        amet,
+                                        ut consectetur diam urna sed. Cras odio eu cursus aiaculis. Sagittis etiam enim quis
+                                        eulectus commo vel scelerisqe nibh. Risus, magnis ornare vitae volutpat eget auctor.
+                                        Curabitur mi nunc neque. Vitae elit pellentesque non a cursus dolor egestas.
+                                    </p>
+                                </div>
+                            </div>                 
+                        </div>
+                        <div class="chat-input justify-content-center align-items-center row">
+                            <div class="col-9 col-lg-10">
+                               
+                                <input type="email" class="form-control" id="userInput" value="" aria-describedby="chatHelp">
+    
                             </div>
-                            <div class="col">
-                                <a class="btn btn-success btn-lg " href="#" role="button"><i class="fa fa-paper-plane"
+                            <div class="col-1">
+                                <a class="btn btn-success  btn-lg " onclick="addUserChat()"  role="button"><i class="fa fa-paper-plane"
                                         aria-hidden="true"></i> </a>
                             </div>
-
+    
                         </div>
                     </div>
-                </div>
+                    </div>
+                   
 
             </section>
 
@@ -232,7 +227,7 @@
 
     </main>
 
-
+<script src="../javscripts/chat.js" ></script>
     <script src="../bootstrap/js/bootstrap.bundle.js"></script>
 </body>
 
