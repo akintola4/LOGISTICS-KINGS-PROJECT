@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>payment-History</title>
+    <title>Riders</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,14 +38,14 @@
             <hr>
             <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item">
-                    <a href="#" class="nav-link link-dark" aria-current="page">
+                    <a href="#" class="nav-link link-dark " aria-current="page">
 
                         <i class="fa fa-home me-2" width="16" height="16" aria-hidden="true"></i>
                         Home
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link link-dark">
+                    <a href="#" class="nav-link purple-btn ">
 
                         <i class="fa fa-motorcycle me-2" width="16" height="16" aria-hidden="true"></i>
 
@@ -60,7 +60,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link   purple-btn">
+                    <a href="#" class="nav-link link-dark ">
                         <i class="fa fa-history me-2 " width="16" height="16" aria-hidden="true"></i>
                         History
                     </a>
@@ -106,22 +106,21 @@
 
                         <i class="fa fa-home purple" width="24" height="24" role="img" aria-hidden="true"></i>
                     </a>
+                </li> 
+                <li>
+                    <a href="#" class="nav-link py-3 purple-btn border-bottom rounded-0" data-bs-toggle="tooltip"
+                        data-bs-placement="right" aria-label="Dashboard" data-bs-original-title="Dashboard">
+                        <i class="fas fa-motorcycle " width="24" height="24" role="img" aria-hidden="true"></i></a>
                 </li>
                 <li>
                     <a href="#" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip"
                         data-bs-placement="right" aria-label="Dashboard" data-bs-original-title="Dashboard">
-                        <i class="fas fa-motorcycle purple " width="24" height="24" role="img"
-                            aria-hidden="true"></i></a>
+                        <i class="fas fa-box-open  purple" width="24" height="24" role="img" aria-hidden="true"></i></a>
                 </li>
                 <li>
                     <a href="#" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip"
-                        data-bs-placement="right" aria-label="Dashboard" data-bs-original-title="Dashboard">
-                        <i class="fas fa-box-open purple " width="24" height="24" role="img" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="#" class="nav-link purple-btn py-3 border-bottom rounded-0" data-bs-toggle="tooltip"
                         data-bs-placement="right" aria-label="Orders" data-bs-original-title="Orders">
-                        <i class="fa fa-history me-2 " width="24" height="24" role="img" aria-hidden="true"></i>
+                        <i class="fa fa-history me-2 purple" width="24" height="24" role="img" aria-hidden="true"></i>
                     </a>
                 </li>
                 <li>
@@ -159,146 +158,83 @@
         </div>
 
         <div class="row container justify-content-center pt-5">
-            <section class="row pb-5">
-                <div class="col-10">
-                    <p class="fw-bold fs-4">Hey Akintola 👋</p>
-                    <p>Here is an overview of your activities.</p>
+            <section class="row">
+
+                <div class="col-lg-8 pb-4"> 
+                    <div class="row">
+                        <p class="col-lg-2">All Riders</p>
+                        <a class="btn col-lg-4 btn-outline-warning  rounded-3" href="#" role="button"
+                           >Create Rider account
+                        </a>
+                    </div>
+
                 </div>
-                <div class="col-1 align-items-end">
-                    <button type="button" class="btn outline-dark position-relative">
-                        <i class="fa fa-bell" aria-hidden="true"></i>
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                            5
-                          <span class="visually-hidden">New alerts</span>
-                        </span>
-                      </button>
-                </div>
-            </section>
-            <section class="row align-items-end">
-                <p class="col-lg-8">History <i class="fa fa-history" aria-hidden="true"></i></p>
                 <div class="col-lg-4">
-                    <div class="row pt-3">
+                    <div class="row">
+
+                        <input type="date" class="col form-control" name="" id="">
+                        <!-- we can remove this since input does a  better job -->
                         <div class="col">
-                            <a class="btn col btn-purple purple w-100 rounded-3" href="#" role="button">Download CSV
-                            </a>
-                        </div>
-                        <div class="col">
-                            <a class="btn col btn-outline-dark w-100 rounded-3" href="#" role="button"> Export CSV</a>
+                            <select class="form-select " aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">Last 7 Days</option>
+                                <option value="2">Last month</option>
+                                <option value="3">Last 6 months</option>
+                            </select>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="row pt-5">
-
-                <nav class="navbar navbar-expand-sm " aria-label="Third navbar example">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#"><i class="fa fa-filter" aria-hidden="true"></i> Filter By</a>
-                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-
-                        <div class="navbar-collapse collapse" id="navbarsExample03">
-                            <ul class="navbar-nav me-auto gap-5 mb-2 mb-sm-0">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="dropdown03"
-                                        data-bs-toggle="dropdown" aria-expanded="false">Date </a>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdown03">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="dropdown03"
-                                        data-bs-toggle="dropdown" aria-expanded="false">Name</a>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdown03">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="dropdown03"
-                                        data-bs-toggle="dropdown" aria-expanded="false">Price</a>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdown03">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link text-danger" href="#"><i class="fa  fa-history"
-                                            aria-hidden="true"></i> Reset Filter</a>
-                                </li>
-
-
-                            </ul>
-
-                            <form>
-
-                                <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-                            </form>
-                        </div>
-                    </div>
-                </nav>
-
             </section>
             <section class="row justify-content-center pt-5">
 
                 <div class="table-responsive row align-items-center">
-                    <table class="table table-hover table-borderless  ">
+                    <table class="table table-hover table-borderless bg-light ">
                         <thead>
                             <tr class=" border-main">
-                                <th scope="col">#</th>
-                                <th scope="col">Company</th>
-                                <th scope="col">Payment Date</th>
-                                <th scope="col">Amount</th>
-                                <th scope="col">Order ID</th>
+
+                                <th scope="col">Rider name</th>
+                                <th scope="col">Rider number</th>
+                                <th scope="col">Rider ID</th>
+                                <th scope="col">Date Added</th>
                                 <th scope="col">Status</th>
-                                <th scope="col">Action</th>
+
                             </tr>
                         </thead>
                         <tbody>
 
                             <tr class=" border-main">
-                                <th scope="row">1</th>
-                                <td><img src="../src/avatar.jpg" alt="" width="32" height="32"
-                                        class="rounded-circle me-2">A-logistics</td>
-                                <td>02 May, 2022</td>
-                                <td>NGN 30,000.00</td>
-                                <td>LGK9082653</td>
-                                <td> <a class="btn col btn-outline-warning rounded-3" href="#" role="button">Pending
+
+                                <td><i class="fa-regular fa-user p-2"></i>Dominic Praise</td>
+                                <td>09078622374</td>
+                                <td>ID78490338</td>
+                                <td>03 Feb, 2023</td>
+                                <td><a class="btn col  rounded-3" href="#" role="button"
+                                        style="background: #E0EFFF; color: #10A711;">At Rest
                                     </a></td>
-                                <td> <a class="btn col btn-purple purple w-100 rounded-3" href="#"
-                                        role="button">Download CSV </a></td>
+
                             </tr>
 
                             <tr class=" border-main">
-                                <th scope="row">2</th>
-                                <td><img src="../src/avatar.jpg" alt="" width="32" height="32"
-                                        class="rounded-circle me-2">A-logistics</td>
-                                <td>25 May, 2022</td>
-                                <td>NGN 30,000.00</td>
-                                <td>LGK9082653</td>
-                                <td><a class="btn col btn-outline-success  rounded-3" href="#" role="button">Success
+
+                                <td><i class="fa-regular fa-user p-2"></i>Dominic Praise</td>
+                                <td>09078622374</td>
+                                <td>ID78490338</td>
+                                <td>03 Feb, 2023</td>
+                                <td><a class="btn col  rounded-3" href="#" role="button"
+                                        style="background: rgba(255, 195, 39, 0.1); color: #FFA500;">On Trip
                                     </a></td>
-                                <td> <a class="btn col btn-purple purple w-100 rounded-3" href="#"
-                                        role="button">Download CSV </a></td>
+
                             </tr>
                             <tr class=" border-main ">
-                                <th scope="row">3</th>
-                                <td><img src="../src/avatar.jpg" alt="" width="32" height="32"
-                                        class="rounded-circle me-2">A-logistics</td>
-                                <td>31 May, 2022</td>
-                                <td>NGN 30,000.00</td>
-                                <td>LGK9082653</td>
-                                <td><a class="btn col btn-outline-danger  rounded-3" href="#" role="button">Cancelled
+
+                                <td><i class="fa-regular fa-user p-2"></i>Dominic Praise</td>
+                                <td>09078622374</td>
+                                <td>ID78490338</td>
+                                <td>03 Feb, 2023</td>
+                                <td><a class="btn col  rounded-3" href="#" role="button"
+                                        style="background: #E0EFFF; color:  #10A711;">At Rest
                                     </a></td>
-                                <td> <a class="btn col btn-purple purple w-100 rounded-3" href="#"
-                                        role="button">Download CSV </a></td>
+
                             </tr>
 
                         </tbody>
