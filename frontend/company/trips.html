@@ -161,10 +161,10 @@
         <div class="row container justify-content-center pt-5">
             <section class="row">
 
-                <div class="col-lg-8 ">
+                <div class="col-lg-8 pb-4">
                     <div class="row">
-                        <p class="col-2">All Riders</p>
-                        <a class="btn col-4 btn-outline-warning  rounded-3" href="#" role="button">Create Rider account
+                        <p class="col-lg-2">All Riders</p>
+                        <a class="btn col-lg-4 btn-outline-warning  rounded-3" href="#" role="button">Create Rider account
                         </a>
                     </div>
 
@@ -208,10 +208,125 @@
                                 <td class="p-3"> 09078622374</td>
                                 <td class="p-3">ID78490338</td>
                                 <td class="p-3">03 Feb, 2023</td>
-                                <td><a class="btn col  rounded-3" href="#" role="button"
-                                        style="background: #E0EFFF; color: #0C46D3;">At Rest
-                                    </a></td>
-                                <td><i class="fa-regular fa-message p-2"></i></td>
+
+                                <td>
+
+
+                                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Assign Package</h5>
+                                                    <button type="button" class="btn" data-bs-dismiss="modal"> <i
+                                                            class="fa fa-close" aria-hidden="true"></i></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="mb-3">
+                                                        <select class="form-select" aria-label="Default select example">
+                                                            <option selected>Select Rider</option>
+                                                            <option value="1">BOLA</option>
+                                                            <option value="2">DAVID</option>
+                                                            <option value="3">AKINLOYE</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn col" data-bs-dismiss="modal"
+                                                        style="background: rgba(47, 95, 183, 0.04);">Cancel</button>
+                                                    <button class="btn btn-primary col"
+                                                        data-bs-target="#exampleModalToggle2"
+                                                        data-bs-toggle="modal">Assign
+                                                        Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                                        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="col bg-light rounded-4 p-2">
+                                                        <div class="row py-2 px-4">
+                                                            <p class="col">Name of sender</p>
+                                                            <p class="col text-end">Akin Tobi</p>
+                                                        </div>
+                                                        <div class="row py-2 px-4">
+                                                            <p class="col">Address of sender</p>
+                                                            <p class="col text-end">Ajah, Lagos</p>
+                                                        </div>
+                                                        <div class="row py-2 px-4">
+                                                            <p class="col">Number of sender</p>
+                                                            <p class="col text-end">08069090901</p>
+                                                        </div>
+                                                        <div class="row py-2 px-4">
+                                                            <p class="col">Package ID</p>
+                                                            <p class="col text-end">ID983993</p>
+                                                        </div>
+                                                        <div class="row py-2 px-4">
+                                                            <p class="col">Date Assigned</p>
+                                                            <p class="col text-end">03 July, 2023</p>
+                                                        </div>
+                                                        <div class="row py-2 px-4">
+                                                            <p class="col">Name of reciever</p>
+                                                            <p class="col text-end">Dominic Praise</p>
+                                                        </div>
+                                                        <div class="row py-2 px-4">
+                                                            <p class="col">Address of reciever</p>
+                                                            <p class="col text-end">APT 3, Cele Ejirin Ogun State</p>
+                                                        </div>
+                                                        <div class="row py-2 px-4">
+                                                            <p class="col">Number of Reciever</p>
+                                                            <p class="col text-end">09035068975</p>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn col" data-bs-dismiss="modal"
+                                                        style="background: rgba(47, 95, 183, 0.04);">close</button>
+                                                    <button class="btn btn-primary col"
+                                                        data-bs-target="#exampleModalToggle3"
+                                                        data-bs-toggle="modal">Confirm Package</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="exampleModalToggle3" aria-hidden="true"
+                                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                
+                                                <div class="modal-body text-center">
+                                                    <img src="../src/check.png" width="50%" alt="">
+                                                    <p>Delivery Confirmed 🎉</p>
+                                                    <p>Congratulations! You have successfully assigned package ID 983993LOG to “Dominic Praise”</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn col" data-bs-dismiss="modal"
+                                                        style="background: rgba(47, 95, 183, 0.04);">Go to Dashboard</button>
+                                                    <button class="btn btn-primary col"
+                                                        data-bs-target="#exampleModalToggle2"
+                                                        data-bs-toggle="modal">Track Delivery</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn rounded-3" data-bs-toggle="modal"
+                                        href="#exampleModalToggle" role="button"
+                                        style="background: #E0EFFF; color: #0C46D3;">
+                                        At Rest
+                                    </button>
+
+                                </td>
+                                <td><a href="../company/chat.html" class="link-dark"><i class="fa-regular fa-message p-2"></i></a>
+                                    </td> 
                             </tr>
 
 
