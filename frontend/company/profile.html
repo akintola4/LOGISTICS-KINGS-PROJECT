@@ -166,14 +166,67 @@
                     <p class="fw-bold fs-4">Hey Akintola 👋</p>
                     <p>Here is an overview of your activities.</p>
                 </div>
-                <div class="col-1 align-items-end">
-                    <button type="button" class="btn outline-dark position-relative">
+                <div class="col-2 align-items-end">
+                    <button type="button" class="btn outline-dark position-relative"  id="liveToastBtn">
                         <i class="fa fa-bell" aria-hidden="true"></i>
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                             5
                             <span class="visually-hidden">New alerts</span>
                         </span>
                     </button>
+                 
+
+                    <div class="toast-container position-fixed top-5 end-0">
+                        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="toast-header">
+                                <i class="fa fa-bell px-2" aria-hidden="true"></i>
+                                <strong class="me-auto">Notification</strong>
+                                <small>11 mins ago</small>
+                                <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="toast-body px-2  py-4">
+                                <div class="row pb-4 align-items-center border-bottom">
+                                    <div class="col-2 "  >
+                                        <i class="fa fa-bell px-2" aria-hidden="true" style="background: rgba(255, 165, 0, 0.1);
+                                        height: 50px;
+                                        width: 50px;
+                                        border-radius: 100px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content:center;
+                                        color:#FFA500;"
+                                        ></i>
+                                    </div>
+                                    <div class="col">
+                                       <p class="fw-bold"> Package Pickup</p>
+                                       <p class="mb-0">Dominic Praise booked you for a package.</p>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="row  align-items-center border-bottom">
+                                    <div class="col-2 "  >
+                                        <i class="fa fa-bell px-2" aria-hidden="true" style="background: rgba(255, 27, 31, 0.1);
+                                        height: 50px;
+                                        width: 50px;
+                                        border-radius: 100px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content:center;
+                                        color:#FF1B1F;"
+                                        ></i>
+                                    </div>
+                                    <div class="col">
+                                       <p class="fw-bold">Payment</p>
+                                       <p class="mb-0">Dominic Praise sent you NGN 6,000</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
             </section>
@@ -260,8 +313,19 @@
 
     </main>
 
-
     <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const toastTrigger = document.getElementById('liveToastBtn')
+        const toastLiveExample = document.getElementById('liveToast')
+
+        if (toastTrigger) {
+            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+            toastTrigger.addEventListener('click', () => {
+                toastBootstrap.show()
+            })
+        }
+    </script>
 </body>
 
 </html>
