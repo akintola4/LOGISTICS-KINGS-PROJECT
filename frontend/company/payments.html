@@ -81,13 +81,16 @@
                     <strong>Akintola Tope</strong>
                 </a>
                 <ul class="dropdown-menu text-small shadow">
-                    <li><a class="dropdown-item" href="../company/profile.html"> <i class="fa-regular fa-user p-2"></i>Profile </a></li>
-                    <li><a class="dropdown-item" href="../company/settings.html"><i class="fa-solid fa-gear p-2"></i>Settings</a></li>
+                    <li><a class="dropdown-item" href="../company/profile.html"> <i
+                                class="fa-regular fa-user p-2"></i>Profile </a></li>
+                    <li><a class="dropdown-item" href="../company/settings.html"><i
+                                class="fa-solid fa-gear p-2"></i>Settings</a></li>
                     <li><a class="dropdown-item" href="#"></a></li>
                     <li>
                         <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-right-from-bracket p-2"></i> Logout</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-right-from-bracket p-2"></i> Logout</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -164,14 +167,19 @@
                     <p class="fw-bold fs-4">Hey Akintola 👋</p>
                     <p>Here is an overview of your activities.</p>
                 </div>
-                <div class="col-1 align-items-end">
+                <div class="col-4 align-items-end">
                     <button type="button" class="btn outline-dark position-relative">
                         <i class="fa fa-bell" aria-hidden="true"></i>
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                             5
-                          <span class="visually-hidden">New alerts</span>
+                            <span class="visually-hidden">New alerts</span>
                         </span>
-                      </button>
+                    </button>
+                    <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover"
+                        data-bs-title="Popover title"
+                        data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle
+                        popover</button>
+
                 </div>
             </section>
             <section class="row align-items-end">
@@ -311,9 +319,18 @@
 
 
     </main>
-
-
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+          return new bootstrap.Popover(popoverTriggerEl)
+        })
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
     <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
