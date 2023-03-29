@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up</title>
+    <title>Login</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,51 +30,28 @@
                 <img class="login-image" src="../src/design-side.png"  alt="">
 
             </div>
-            <div class="col">
+            <div class="col p-5">
+
               <div class="mb-3 form-body ">
-                <form class="margin-auto " >
+                <form class="margin-auto" >
                     <p>Welcome 👋</p>
-                    <p class="fw-bold fs-3">Create your account</p>
-                    <div class="row mb-3 g-3">
-                      <div class="col-sm-6">
-                        <label for="firstName" class="form-label">First name</label>
-                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
-                        <div class="invalid-feedback">
-                          Valid first name is required.
-                        </div>
-                      </div>
-                      <div class="col-sm-6">
-                        <label for="lastName" class="form-label">Last name</label>
-                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
-                        <div class="invalid-feedback">
-                          Valid last name is required.
-                        </div>
-                      </div>
+                    <p class="fw-bold fs-3">Login to your account</p>
+                    <div class="row  gap-5 pb-3">
+                      <a href="../company/login.html" class="btn col btn-sm  purple-btn rounded-3 ">Company Account</a>
+                      <a href="../user/login.html" class="btn col btn-purple btn-sm rounded-3 ">Customer  Account</a>
                     </div>
                   <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control form-control-lg" placeholder="dom@mail.com" id="exampleInputEmail1" aria-describedby="emailHelp" required="">
+                    <input type="email" class="form-control rounded-3 form-control-lg" placeholder="dom@mail.com" id="exampleInputEmail1" aria-describedby="emailHelp" required="">
                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                     <div class="invalid-feedback">
                       Valid email is required.
                     </div>
                   </div>
-                  <div class="row mb-3 g-3">
-                    
-                      <label for="phoneNumber" class="form-label">Phone Number</label>
-                      <input type="text" class="form-control" id="phoneNumber" placeholder="" value="" required="">
-                      <div class="invalid-feedback">
-                        Valid Phone Number is required.
-                      </div>
-                 
-                    
-                    </div>
-                  
-                 
                   <div class="mb-3">
                     <label for="InputPassword1" class="form-label">Password</label>
                     <div class="input-group ">
-                      <input type="password" class="form-control InputPassword1 form-control-lg" required="" id="password1">
+                      <input type="password" class="form-control InputPassword1 form-control-lg" id="password1" required="">
                       <span class="input-group-text ">
                         <i class="fa fa-eye " id="eye1" onclick="eyeClick()" aria-hidden="true"></i>
                       </span>
@@ -84,10 +61,11 @@
                     </div>
                   </div>
                   <div class="mb-3 row align-items-center ">
-                    <a class="link purple col text-decoration-none" href="../user/login.html">Already have an account?</a>
-                    
+                    <a class="link purple col text-decoration-none" href="../company/signUp.html">Don’t have an account?</a>
+                    <a class="link-danger col text-decoration-none text-end" href="../company/reset.html">Forgot Password</a>
                   </div> 
-                  <button type="submit" class="btn col-12 btn-lg login ">Create an Account</button>
+                  
+                  <a href="../company/orders.html" class="btn col-12 btn-lg rounded-3 login ">Login</a>
                 </form>
                 
               </div>  
@@ -98,7 +76,7 @@
 
     </main>
 
-    <script src="../javscripts/eye.js"></script>
+<script src="../javscripts/eye.js"></script>
     <script src="../bootstrap/js/bootstrap.bundle.js"></script>
 </body>
 
