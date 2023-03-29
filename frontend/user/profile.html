@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat</title>
+    <title>NEARBY LOGISTICS </title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +26,7 @@
 
 <body>
     <header class="d-flex flex-nowrap " style="position: fixed;">
-        <div class="d-flex flex-column sidebar-1 flex-shrink-0 p-3 bg-light"
+        <div class="d-flex flex-column sidebar-1 flex-shrink-0 p-lg-3 bg-light"
             style="width: 280px; display:none; height:100vh;">
             <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
                 <svg class="bi pe-none me-2" width="40" height="32">
@@ -38,35 +38,27 @@
             <hr>
             <ul class="nav nav-pills flex-column mb-auto">
                 <li class="nav-item">
-                    <a href="../company/orders.html" class="nav-link link-dark" aria-current="page">
+                    <a href="../user/home.html" class="nav-link link-dark" aria-current="page">
 
                         <i class="fa fa-home me-2" width="16" height="16" aria-hidden="true"></i>
                         Home
                     </a>
                 </li>
                 <li>
-                    <a href="../company/riders.html" class="nav-link link-dark">
+                    <a href="../user/orders.html" class="nav-link purple-btn">
 
-                        <i class="fa fa-motorcycle me-2" width="16" height="16" aria-hidden="true"></i>
-
-                        Riders
+                        <i class="fa fa-calendar me-2" width="16" height="16" aria-hidden="true"></i>
+                        Orders
                     </a>
                 </li>
                 <li>
-                    <a href="../company/trips.html" class="nav-link  purple-btn">
-                        <i class="fas fa-box-open me-2 " width="16" height="16" aria-hidden="true"></i>
-
-                        Trips & Packages
-                    </a>
-                </li>
-                <li>
-                    <a href="../company/histroy.html" class="nav-link link-dark ">
+                    <a href="../user/histroy.html" class="nav-link link-dark">
                         <i class="fa fa-history me-2 " width="16" height="16" aria-hidden="true"></i>
                         History
                     </a>
                 </li>
                 <li>
-                    <a href="../company/payments.html" class="nav-link link-dark">
+                    <a href="../user/payment-history.html" class="nav-link link-dark">
                         <i class="fa-solid fa-money-bill me-2" width="16" height="16" aria-hidden="true"></i>
                         Payments
                     </a>
@@ -80,7 +72,7 @@
                     <img src="../src/avatar.jpg" alt="" width="32" height="32" class="rounded-circle me-2">
                     <strong>Akintola Tope</strong>
                 </a>
-               <ul class="dropdown-menu text-small shadow">
+              <ul class="dropdown-menu text-small shadow">
                  
                     <li><a class="dropdown-item" href="../user/settings.html"><i class="fa-solid fa-gear p-2"></i>Settings</a></li>
                     <li><a class="dropdown-item" href="../user/profile.html"><i class="fa-solid fa-user p-2"></i>Profile</a></li>
@@ -98,32 +90,26 @@
             </a>
             <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
                 <li class="nav-item">
-                    <a href="../company/orders.html" class="nav-link  py-3 border-bottom rounded-0" aria-current="page"
+                    <a href="../user/home.html" class="nav-link purple py-3 border-bottom rounded-0" aria-current="page"
                         data-bs-toggle="tooltip" data-bs-placement="right" aria-label="Home"
                         data-bs-original-title="Home">
 
-                        <i class="fa fa-home purple" width="24" height="24" role="img" aria-hidden="true"></i>
+                        <i class="fa fa-home" width="24" height="24" role="img" aria-hidden="true"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="../company/riders.html" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip"
+                    <a href="../user/orders.html" class="nav-link py-3 purple-btn border-bottom rounded-0" data-bs-toggle="tooltip"
                         data-bs-placement="right" aria-label="Dashboard" data-bs-original-title="Dashboard">
-                        <i class="fas fa-motorcycle purple " width="24" height="24" role="img"
-                            aria-hidden="true"></i></a>
+                        <i class="fa fa-calendar  " width="24" height="24" role="img" aria-hidden="true"></i></a>
                 </li>
                 <li>
-                    <a href="../company/trips.html" class="nav-link py-3 purple-btn border-bottom rounded-0" data-bs-toggle="tooltip"
-                        data-bs-placement="right" aria-label="Dashboard" data-bs-original-title="Dashboard">
-                        <i class="fas fa-box-open  " width="24" height="24" role="img" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="../company/histroy.html" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip"
+                    <a href="../user/histroy.html" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip"
                         data-bs-placement="right" aria-label="Orders" data-bs-original-title="Orders">
                         <i class="fa fa-history me-2 purple" width="24" height="24" role="img" aria-hidden="true"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="../company/payments.html" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip"
+                    <a href="../user/payment-history.html" class="nav-link py-3 border-bottom rounded-0" data-bs-toggle="tooltip"
                         data-bs-placement="right" aria-label="Products" data-bs-original-title="Products">
                         <i class="fa-solid fa-money-bill me-2 purple" width="24" height="24" role="img"
                             aria-hidden="true"></i>
@@ -133,11 +119,11 @@
             </ul>
             <div class="dropdown profile border-top ">
                 <a href="#"
-                    class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle"
+                    class="d-flex align-items-center justify-content-center p-lg-3 link-dark text-decoration-none dropdown-toggle"
                     data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="../src/avatar.jpg" alt="mdo" width="24" height="24" class="rounded-circle">
                 </a>
-               <ul class="dropdown-menu text-small shadow">
+              <ul class="dropdown-menu text-small shadow">
                  
                     <li><a class="dropdown-item" href="../user/settings.html"><i class="fa-solid fa-gear p-2"></i>Settings</a></li>
                     <li><a class="dropdown-item" href="../user/profile.html"><i class="fa-solid fa-user p-2"></i>Profile</a></li>
@@ -147,7 +133,6 @@
             </div>
         </div>
     </header>
-
     <main class="d-flex  flex-column flex-shrink-0">
         <div class="bg-purple align-items-center row p-1">
             <p class="text-center">Kindly provide the requested information to fully verify your account. <a
@@ -224,75 +209,102 @@
                 </div>
 
             </section>
-            <section class="row  pt-3">
+            <div class="row p-3 rounded-4 ">
 
-                <div class="row gap-5 align-items-center justify-content-between ">
+                <div class="col-lg-3"><img src="../src/avatar3.png" style="width: 100%;" alt=""></div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-6 justify-content-start">
+                            <p class="fw-bold fs-5 mb-0">Hype Logistics <i class="fa fa-check-circle px-3"
+                                    aria-hidden="true"></i></p>
 
-                    
-                    <div class="">
-                        <div class="chats " id="chats">
-                            <div class="chat-history gap-3 ">
+                            <div class=" m-0 py-2">
+                                <p class="mb-0 "> <i class="fas fa-location  px-2"></i>Ajah, Lagos</p>
+                            </div>
+                            <img src="../src/rate.png" class="py-1" alt="">
+                        </div>
+
+                    </div>
+                    <div>
+                        <p class="text-secondary lh-sm " style="text-align: justify;">Get early feedback on your GSoC
+                            proposal. Proposals are a lightweight way to start
+                            articulating your design ideas and plans before going forward with implementation or
+                            heavyweight documentation.</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <section class="row   pt-2">
+                <div class="col-lg-6">
+                  <div class="row pt-5">
+
+                    <p class="col-lg-8">New Deliveries <i class="fa fa-history" aria-hidden="true"></i></p>
+                </div>
+                <div class="table-responsive row align-items-center">
+                    <table class="table table-hover table-borderless  ">
+                        <thead>
+                            <tr class=" border-main">
                                 
-                                <div class="user d-flex flex-row justify-content-start mb-4">
-                                    <p class="bg-light row rounded-4 p-3 col-lg-6  ">
-                                        <label class="userName" for=""><i class="fa-regular fa-user p-2"></i> Customer</label>
-                                        Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra maliquet
-                                        amet,
-                                        ut consectetur diam urna sed. Cras odio eu cursus aiaculis. Sagittis etiam enim quis
-                                        eulectus commo vel scelerisqe nibh. Risus, magnis ornare vitae volutpat eget auctor.
-                                        Curabitur mi nunc neque. Vitae elit pellentesque non a cursus dolor egestas.
-                                    </p>
-                                </div>
-                                <div class="sender d-flex flex-row justify-content-end mb-4">
-                                    <p class="bg-light row rounded-4 p-3 col-lg-6  ">
-                                        <label class="senderName" for=""><i class="fa-regular fa-user p-2"></i>
-                                            Sender</label>
-                                        Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra maliquet
-                                        amet,
-                                        ut consectetur diam urna sed. Cras odio eu cursus aiaculis. Sagittis etiam enim quis
-                                        eulectus commo vel scelerisqe nibh. Risus, magnis ornare vitae volutpat eget auctor.
-                                        Curabitur mi nunc neque. Vitae elit pellentesque non a cursus dolor egestas.
-                                    </p>
-    
-                                </div>
-                            </div>                 
-                        </div>
-                        <div class="chat-input justify-content-center align-items-center row">
-                            <div class="col-9 col-lg-10">
-                            
-                               <textarea class="w-100" id="myTextarea"></textarea>
-                            </div>
-                            <div class="col-1">
-                                <a class="btn btn-success  btn-lg " onclick="addSenderChat()"  role="button"><i class="fa fa-paper-plane"
-                                        aria-hidden="true"></i> </a>
-                            </div>
-    
-                        </div>
-                    </div>
-                    </div>
-                   
+                                <th scope="col">Customer Name</th>
+                                <th scope="col"> Date</th>
+                                <th scope="col">Rating</th>
+                              
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr class=" border-main">
+                                
+                                <td><img src="../src/avatar.jpg" alt="" width="32" height="32" class="rounded-circle me-2">Akintola</td>
+                                <td>19-09-2350</td>
+                                <td><img src="../src/rate.png" alt=""></td>
+                               
+                            </tr>
+
+                            <tr class=" border-main">
+                                
+                                <td><img src="../src/avatar.jpg" alt="" width="32" height="32" class="rounded-circle me-2">Jona</td>
+                                <td>19-09-2350</td>
+                                <td><img src="../src/rate.png" alt=""></td>
+                           
+                               
+                              
+                            </tr>
+                            <tr class=" border-main ">
+                                
+                                <td><img src="../src/avatar.jpg" alt="" width="32" height="32" class="rounded-circle me-2">Thomas</td>
+                                <td>19-09-2350</td>
+                                <td><img src="../src/rate.png" alt=""></td>
+                               
+                              
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>   
+                </div>
+               
 
             </section>
-
         </div>
 
 
     </main>
 
-<script src="../javscripts/chat.js" ></script>
-<script src="../bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+    
+    <script>
+        const toastTrigger = document.getElementById('liveToastBtn')
+        const toastLiveExample = document.getElementById('liveToast')
 
-<script>
-    const toastTrigger = document.getElementById('liveToastBtn')
-    const toastLiveExample = document.getElementById('liveToast')
-
-    if (toastTrigger) {
-        const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
-        toastTrigger.addEventListener('click', () => {
-            toastBootstrap.show()
-        })
-    }
-</script>
+        if (toastTrigger) {
+            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+            toastTrigger.addEventListener('click', () => {
+                toastBootstrap.show()
+            })
+        }
+    </script>
 </body>
 
 </html>

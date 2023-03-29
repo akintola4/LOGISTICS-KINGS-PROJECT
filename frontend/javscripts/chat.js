@@ -6,8 +6,7 @@
 //create a variable that will create a label element
 //create a variable that will create a text node
 function addUserChat() {
-    let chatInput = document.getElementById("userInput").value
-
+    let chatInput = document.getElementById("myTextarea").value;
     let div = document.createElement('div')
     
     div.classList.add("user", "d-flex", "flex-row", "justify-content-end", "mb-4")
@@ -32,8 +31,8 @@ function addUserChat() {
 
 }
 function addSenderChat() {
-    let chatInput = document.getElementById("userInput").value
-
+    let chatInput = document.getElementById("myTextarea").value;
+    console.log(chatInput)
     let div = document.createElement('div')
     
     div.classList.add("user", "d-flex", "flex-row", "justify-content-end", "mb-4")
