@@ -142,14 +142,18 @@
                     data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="../src/avatar.jpg" alt="mdo" width="24" height="24" class="rounded-circle">
                 </a>
+
                 <ul class="dropdown-menu text-small shadow">
-                    <li><a class="dropdown-item" href="#">New project...</a></li>
-                    <li><a class="dropdown-item" href="#">Settings</a></li>
-                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="../company/profile.html"> <i
+                                class="fa-regular fa-user p-2"></i>Profile </a></li>
+                    <li><a class="dropdown-item" href="../company/settings.html"><i
+                                class="fa-solid fa-gear p-2"></i>Settings</a></li>
+                    <li><a class="dropdown-item" href="#"></a></li>
                     <li>
                         <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-right-from-bracket p-2"></i> Logout</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -167,20 +171,69 @@
                     <p class="fw-bold fs-4">Hey Akintola 👋</p>
                     <p>Here is an overview of your activities.</p>
                 </div>
-                <div class="col-4 align-items-end">
-                    <button type="button" class="btn outline-dark position-relative">
+                <div class="col-2 align-items-end">
+                    <button type="button" class="btn outline-dark position-relative"  id="liveToastBtn">
                         <i class="fa fa-bell" aria-hidden="true"></i>
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                             5
                             <span class="visually-hidden">New alerts</span>
                         </span>
                     </button>
-                    <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover"
-                        data-bs-title="Popover title"
-                        data-bs-content="And here's some amazing content. It's very engaging. Right?">Click to toggle
-                        popover</button>
+                 
+
+                    <div class="toast-container position-fixed top-5 end-0">
+                        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="toast-header">
+                                <i class="fa fa-bell px-2" aria-hidden="true"></i>
+                                <strong class="me-auto">Notification</strong>
+                                <small>11 mins ago</small>
+                                <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="toast-body px-2  py-4">
+                                <div class="row pb-4 align-items-center border-bottom">
+                                    <div class="col-2 "  >
+                                        <i class="fa fa-bell px-2" aria-hidden="true" style="background: rgba(255, 165, 0, 0.1);
+                                        height: 50px;
+                                        width: 50px;
+                                        border-radius: 100px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content:center;
+                                        color:#FFA500;"
+                                        ></i>
+                                    </div>
+                                    <div class="col">
+                                       <p class="fw-bold"> Package Pickup</p>
+                                       <p class="mb-0">Dominic Praise booked you for a package.</p>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="row  align-items-center border-bottom">
+                                    <div class="col-2 "  >
+                                        <i class="fa fa-bell px-2" aria-hidden="true" style="background: rgba(255, 27, 31, 0.1);
+                                        height: 50px;
+                                        width: 50px;
+                                        border-radius: 100px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content:center;
+                                        color:#FF1B1F;"
+                                        ></i>
+                                    </div>
+                                    <div class="col">
+                                       <p class="fw-bold">Payment</p>
+                                       <p class="mb-0">Dominic Praise sent you NGN 6,000</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
+
             </section>
             <section class="row align-items-end">
                 <p class="col-lg-8">History <i class="fa fa-history" aria-hidden="true"></i></p>
@@ -319,18 +372,19 @@
 
 
     </main>
-    <script>
-        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-          return new bootstrap.Popover(popoverTriggerEl)
-        })
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-          return new bootstrap.Tooltip(tooltipTriggerEl)
-        })
-    </script>
     <script src="../bootstrap/js/bootstrap.bundle.js"></script>
     <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const toastTrigger = document.getElementById('liveToastBtn')
+        const toastLiveExample = document.getElementById('liveToast')
+
+        if (toastTrigger) {
+            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+            toastTrigger.addEventListener('click', () => {
+                toastBootstrap.show()
+            })
+        }
+    </script>
 </body>
 
 </html>
