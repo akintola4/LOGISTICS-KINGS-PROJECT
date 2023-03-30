@@ -42,6 +42,7 @@ body {
     border: #3E4095;
     background: #3E4095;
 }
+
 .purple-btn{
     background-color: #3E4095 !important;
     
@@ -172,7 +173,7 @@ border-bottom: 30px #fff solid ;
 
     main {
         
-        padding-left: 100px !important;
+        padding-left: 80px !important;
     }
     .content{
     
