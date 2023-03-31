@@ -55,14 +55,37 @@ color: #fff;}
     color: #3E4095;
 }
 .btn-purple{
-  
-    
     border: 2px solid #3E4095;
     color: #3E4095;
 }.btn-purple:hover{
     background-color: #3E4095;
     color: #fff;
 }
+
+.btn-primary{
+    border: 2px solid #0a58ca;
+    color: #0a58ca;
+}.btn-primary:hover{
+    background-color: #0a58ca;
+    color: #fff;
+}
+
+
+.btn-green{
+    border: 2px solid #08E42B;
+    color: #08E42B;
+}.btn-green:hover{
+    background-color: #08E42B;
+    color: #fff;
+}
+.btn-red{
+    border: 2px solid #EC0606;
+    color: #EC0606;
+}.btn-red:hover{
+    background-color: #EC0606;
+    color: #fff;
+}
+
 .border-purple{
     border: #3E4095 2px solid;
 }
