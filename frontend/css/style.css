@@ -182,7 +182,9 @@ border-bottom: 30px #fff solid ;
 .navfix{
     display: none;
  }
-
+.z-index{
+    z-index: -1;
+}
 @media (max-width:900px) {
 
     .sidebar-1 {
