@@ -1,0 +1,10 @@
+ .navfix{
+    display: none;
+ }
+@media (max-width:900px) {
+    .navfix{
+        display: block;
+        
+    }
+
+}

@@ -179,6 +179,9 @@ border-bottom: 30px #fff solid ;
     background-color: #3E4095;
     color: #fff;
 }
+.navfix{
+    display: none;
+ }
 
 @media (max-width:900px) {
 
@@ -196,7 +199,14 @@ border-bottom: 30px #fff solid ;
 
     main {
         
-        padding-left: 80px !important;
+        padding: 20px !important;
+    }
+    .warning{
+        margin-top: 70px;
+    }
+    .navfix{
+        display: block;
+        
     }
     .content{
     
