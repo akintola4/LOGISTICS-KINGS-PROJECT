@@ -1404,8 +1404,8 @@
             </section>
 
             <section class="row  pt-5">
-                <div class="col-lg-6">
-                    <div class="row  border border-0 bg-light rounded-4 p-3 col-lg-8 align-items-center "
+                <div class="col-lg-6 ">
+                    <div class="row  border border-0 bg-light rounded-4 p-3 col-lg-12 align-items-center "
                         style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);">
 
                         <div class="col-lg-4 ">
@@ -1418,32 +1418,24 @@
                             <p class="fw-bolder fs-3  mb-1">498,090</p>
                             <p class="text-secondary">Total Montly Income</p>
                         </div>
-                    </div>
-                    <!-- <div class="col-lg-12">
-                        <div class="card mb-0">
-
-                            <div class="card-body d-flex flex-column">
-                                <h3>Total Overdue</h3>
-                                <p class="small mb-5 text-gray-500">Lorem ipsum dolor sit amet.</p>
-                                <p class="text-xl text-center fw-normal">$20,000</p>
-                                <div class="chart mt-auto">
-                                    <div class="chartjs-size-monitor">
-                                        <div class="chartjs-size-monitor-expand">
-                                            <div class=""></div>
-                                        </div>
-                                        <div class="chartjs-size-monitor-shrink">
-                                            <div class=""></div>
-                                        </div>
-                                    </div>
-                                    <canvas id="lineChart1" style="display: block; height: 331px; width: 662px;"
-                                        width="1324" height="662" class="chartjs-render-monitor"> </canvas>
+                    
+                        <div class="chart mt-auto">
+                            <div class="chartjs-size-monitor">
+                                <div class="chartjs-size-monitor-expand">
+                                    <div class=""></div>
+                                </div>
+                                <div class="chartjs-size-monitor-shrink">
+                                    <div class=""></div>
                                 </div>
                             </div>
+                            <canvas id="myChart" style="display: block; height: 331px; width: 662px;"
+                                width="1324" height="662" class="chartjs-render-monitor"> </canvas>
                         </div>
-                    </div> -->
+                    </div>
+               
 
                 </div>
-                <div class="col-lg-6 ">
+                <div class="col-lg-6">
                     <div class="row border border-0 bg-light rounded-4 p-3 col-lg-7 align-items-center"
                         style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);">
                         <div class="col">
@@ -1551,9 +1543,43 @@
 
     <script src="../bootstrap/js/bootstrap.bundle.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
-    <!-- <script src="https://d19m59y37dris4.cloudfront.net/admin/2-1-0/js/charts-home.36b080a8.js">
-        
-    </script> -->
+    <script>
+        const ctx = document.getElementById('myChart');
+    
+        new Chart(ctx, {
+          type: 'line',
+          data: {
+            labels: ["jan","feb","mar","apr","may","jun","jul","aug","sep","Oct","Nov","Dec"],
+            datasets: [{
+              label: 'This month',
+              data: [100000, 150000, 100000, 150000, 100000, 120000,220342,100000,150000,100000,150000,100000],
+                borderWidth: 3,
+                borderColor: '#751BD6',
+          
+                tension: 0.3,
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true,
+                grid: {
+                  lineWidth:0
+                }
+               
+              },
+              x: {
+                beginAtZero: true,
+                grid: {
+                  borderColor: "green",
+                  lineWidth:0,
+                }
+               
+              }
+            }
+          }
+        });
+      </script>
 
 
 </body>
