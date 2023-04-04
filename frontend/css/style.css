@@ -185,6 +185,9 @@ border-bottom: 30px #fff solid ;
 .z-index{
     z-index: -1;
 }
+.card{
+    position: inherit;
+}
 @media (max-width:900px) {
 
     .sidebar-1 {
