@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>History</title>
+    <title>Chat</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,22 +39,22 @@
                 <li class="nav-item">
                     <a href="../admin/home.html" class="nav-link link-dark  " aria-current="page">
 
-                     
+
                         Home
                     </a>
                 </li>
                 <li>
-                    <a href="../admin/company.html" class="nav-link link-dark  ">
-                      
-                     
+                    <a href="../admin/company.html" class="nav-link purple-btn  ">
+
+
                         Companies
                     </a>
                 </li>
                 <li>
-                    <a href="../admin/orders.html" class="nav-link purple-btn">
+                    <a href="../admin/orders.html" class="nav-link link-dark">
 
 
-                       Orders
+                        Orders
                     </a>
                 </li>
                 <li>
@@ -107,40 +107,40 @@
                     <ul class="nav nav-pills fs-6 flex-column mb-auto">
                         <li class="nav-item">
                             <a href="../admin/home.html" class="nav-link link-dark  " aria-current="page">
-        
-                             
+
+
                                 Home
                             </a>
                         </li>
                         <li>
                             <a href="../admin/company.html" class="nav-link link-dark  ">
-                              
-                             
+
+
                                 Companies
                             </a>
                         </li>
                         <li>
                             <a href="../admin/orders.html" class="nav-link link-dark">
-        
-        
-                               Orders
+
+
+                                Orders
                             </a>
                         </li>
                         <li>
                             <a href="../admin/disputie.html" class="nav-link link-dark ">
-        
+
                                 Disputies
                             </a>
                         </li>
                         <li>
                             <a href="../admin/payments.html" class="nav-link link-dark">
-        
+
                                 Payments
                             </a>
                         </li>
                         <li>
                             <a href="../admin/users.html" class="nav-link link-dark">
-        
+
                                 Users
                             </a>
                         </li>
@@ -156,29 +156,23 @@
         </nav>
     </header>
 
-
     <main class="d-flex  flex-column flex-shrink-0">
-    
 
-        <div class="row container-fluid justify-content-center pt-5">
-            <section class="row pt-5 align-items-center">
-                <p class="col-lg-8 fw-bold mb-0 fs-5"></p>
+
+        <div class="row container justify-content-center pt-5">
+            <section class="row pt-3">
+                <div class="col-8">
+                  
+                </div>
 
                 <div class="col-lg-4">
-                    <div class="row gap-3 justify-content-end">
-                        <div class="col-lg-4">
-                            <select class="form-select border-0" aria-label="Default select example"
-                                style="box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.15);">
-                                <option selected>Sort</option>
-                                <option value="1">Last 7 Days</option>
-                                <option value="2">Last month</option>
-                                <option value="3">Last 6 months</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-5">
-                            <select class="form-select border-0" aria-label="Default select example"
-                                style="box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.15);">
-                                <option selected> Add filter</option>
+                    <div class="row">
+
+                        <input type="date" class="col form-control" name="" id="">
+                        <!-- we can remove this since input does a  better job -->
+                        <div class="col">
+                            <select class="form-select " aria-label="Default select example">
+                                <option selected>Open this select menu</option>
                                 <option value="1">Last 7 Days</option>
                                 <option value="2">Last month</option>
                                 <option value="3">Last 6 months</option>
@@ -187,110 +181,89 @@
                     </div>
                 </div>
             </section>
-            <section class="row justify-content-center pt-5">
+            <section class="row  pt-5">
 
-                <div class=" row  align-items-center">
-                    <div class="gap-4" style="
-                    display: flex;
-                    flex-direction: column;
-                ">
-                        <div class="row  align-items-center justify-content-center p-3 bg-light rounded-4 " style="
-                        cursor:pointer;">
-                            <div class="col-lg-3 align-items-center">
-                                <img src="../src/item.png" alt="" style="width: 73.56px;
-                            height: 71.22px;
-                            border-radius:50%;">
-                            </div>
-                            <div class="col-lg-7 p-1">
+                <div class="row gap-5 align-items-center justify-content-between ">
 
-                                <p class=" mb-0 fw-bolder">Hisense Washing Machine</p>
-                                <p class=" mb-0  item-status">Pickup : Orita Obele Estate</p>
-                                <p class=" mb-0  item-status text-secondary">DELIVERY : Passo Street</p>
+                    
+                    <div class="">
+                        <div class="chats " id="chats">
+                            <div class="chat-history gap-3 ">
+                              
+                              
+                                <div class="sender d-flex flex-row justify-content-start mb-4">
+                                    <p class="bg-light row rounded-4 p-3 col-lg-6  ">
+                                        <label class="senderName" for=""><i class="fa-regular fa-user p-2"></i>
+                                            A-logistics COMPANY</label>
+                                        Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra
+                                        maliquet
+                                        amet,
+                                        ut consectetur diam urna sed. Cras odio eu cursus aiaculis. Sagittis etiam enim
+                                        quis
+                                        eulectus commo vel scelerisqe nibh. Risus, magnis ornare vitae volutpat eget
+                                        auctor.
+                                        Curabitur mi nunc neque. Vitae elit pellentesque non a cursus dolor egestas.
+                                    </p>
 
-                            </div>
+                                </div>
+                                <div class="user d-flex flex-row justify-content-end mb-4">
+                                    <p class="bg-light row rounded-4 p-3 col-lg-6  ">
+                                        <label class="userName" for=""><i class="fa-regular fa-user p-2"></i> MODERATOR
+                                            TOSIN</label>
+                                        Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra
+                                        maliquet
+                                        amet,
+                                        ut consectetur diam urna sed. Cras odio eu cursus aiaculis. Sagittis etiam enim
+                                        quis
+                                        eulectus commo vel scelerisqe nibh. Risus, magnis ornare vitae volutpat eget
+                                        auctor.
+                                        Curabitur mi nunc neque. Vitae elit pellentesque non a cursus dolor egestas.
+                                    </p>
+                                </div>
+                                <div class="sender d-flex flex-row justify-content-start mb-4">
+                                    <p class="bg-light row rounded-4 p-3 col-lg-6  ">
+                                        <label class="senderName" for=""><i class="fa-regular fa-user p-2"></i>
+                                            A-logistics COMPANY</label>
+                                        Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra
+                                        maliquet
+                                        amet,
+                                        ut consectetur diam urna sed. Cras odio eu cursus aiaculis. Sagittis etiam enim
+                                        quis
+                                        eulectus commo vel scelerisqe nibh. Risus, magnis ornare vitae volutpat eget
+                                        auctor.
+                                        Curabitur mi nunc neque. Vitae elit pellentesque non a cursus dolor egestas.
+                                    </p>
 
-                            <div class="col-lg-2 ">
-                                <a class="btn btn-warning btn-sm p-2  " href="../admin/chat.html" role="button">DISPUTES   <span><i class="fab px-3 fa-rocketchat"></i></span></a>
-                            </div>
-                        </div>
-                        <div class="row  align-items-center justify-content-center p-3 bg-light rounded-4 " style="
-                        cursor:pointer;">
-                            <div class="col-lg-3 align-items-center">
-                                <img src="../src/item.png" alt="" style="width: 73.56px;
-                            height: 71.22px;
-                            border-radius:50%;">
-                            </div>
-                            <div class="col-lg-7 p-1">
-
-                                <p class=" mb-0 fw-bolder">Hisense Washing Machine</p>
-                                <p class=" mb-0  item-status">Pickup : Orita Obele Estate</p>
-                                <p class=" mb-0  item-status text-secondary">DELIVERY : Passo Street</p>
-
-                            </div>
-
-                            <div class="col-lg-2 ">
-                                <a class="btn btn-warning btn-sm p-2  " href="../admin/chat.html" role="button">DISPUTES   <span><i class="fab px-3 fa-rocketchat"></i></span></a>
-                            </div>
-                        </div>
-                        <div class="row   align-items-center justify-content-center p-3  rounded-4 bg-light" style="
-                        cursor:pointer;">
-                            <div class="col-lg-3 align-items-center">
-                                <img src="../src/item.png" alt="" style="width: 73.56px;
-                            height: 71.22px;
-                            border-radius:50%;">
-                            </div>
-                            <div class="col-lg-7 p-1">
-
-                                <p class=" mb-0 fw-bolder">Hisense Washing Machine</p>
-                                <p class=" mb-0  item-status">HANDLE WITH EXTREME CARE</p>
-                                <p class=" mb-0  item-status text-secondary">DELIVERY : Passo Street</p>
-                            </div>
-                           
-                            <div class="col-lg-2 ">
-                                <a class="btn btn-green btn-sm green " href="#" role="button">Completeted </a>
-
-                            </div>
-                        </div>
-                        <div class="row  align-items-center justify-content-center p-3 bg-light rounded-4 " style="
-                        cursor:pointer;">
-                            <div class="col-lg-3 align-items-center">
-                                <img src="../src/item.png" alt="" style="width: 73.56px;
-                            height: 71.22px;
-                            border-radius:50%;">
-                            </div>
-                            <div class="col-lg-7 p-1">
-
-                                <p class=" mb-0 fw-bolder">Hisense Washing Machine</p>
-                                <p class=" mb-0  item-status">Pickup : Orita Obele Estate</p>
-                                <p class=" mb-0  item-status text-secondary">DELIVERY : Passo Street</p>
-                            </div>
-
-                            <div class="col-lg-2 ">
-                                <a class="btn btn-green btn-sm green " href="#" role="button">Completeted </a>
-
+                                </div>
+                                <div class="user d-flex flex-row justify-content-end mb-4">
+                                    <p class="bg-light row rounded-4 p-3 col-lg-6  ">
+                                        <label class="userName" for=""><i class="fa-regular fa-user p-2"></i> MODERATOR
+                                            TOSIN</label>
+                                        Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra
+                                        maliquet
+                                        amet,
+                                        ut consectetur diam urna sed. Cras odio eu cursus aiaculis. Sagittis etiam enim
+                                        quis
+                                        eulectus commo vel scelerisqe nibh. Risus, magnis ornare vitae volutpat eget
+                                        auctor.
+                                        Curabitur mi nunc neque. Vitae elit pellentesque non a cursus dolor egestas.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="row  align-items-center justify-content-center p-3 bg-light rounded-4 " style="
-                        cursor:pointer;">
-                            <div class="col-lg-3 align-items-center">
-                                <img src="../src/item.png" alt="" style="width: 73.56px;
-                            height: 71.22px;
-                            border-radius:50%;">
+                        <div class="chat-input justify-content-center align-items-center row">
+                            
+                            <div class="col-lg-9"><textarea class="w-100" id="myTextarea"></textarea>
                             </div>
-                            <div class="col-lg-7 p-1">
-
-                                <p class=" mb-0 fw-bolder">Hisense Washing Machine</p>
-                                <p class=" mb-0  item-status">Pickup : Orita Obele Estate</p>
-                                <p class=" mb-0  item-status text-secondary">DELIVERY : Passo Street</p>
+                            <div class="col-1">
+                                <a class="btn btn-success  btn-lg " onclick="addAdminChat()" role="button"><i
+                                        class="fa fa-paper-plane" aria-hidden="true"></i> </a>
                             </div>
 
-                            <div class="col-lg-2 ">
-                                <a class="btn btn-green btn-sm green " href="#" role="button">Completeted </a>
-
-                            </div>
                         </div>
                     </div>
                 </div>
+
 
             </section>
 
@@ -299,7 +272,7 @@
 
     </main>
 
-
+    <script src="../javscripts/chat.js"></script>
     <script src="../bootstrap/js/bootstrap.bundle.js"></script>
 </body>
 
