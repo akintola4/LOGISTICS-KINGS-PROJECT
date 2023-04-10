@@ -1,0 +1,407 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Manrope:wght@400;600;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="../src/logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="../fontawesome-free-6.3.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="../fontawesome-free-6.3.0-web/css/brands.css" rel="stylesheet">
+    <link href="../fontawesome-free-6.3.0-web/css/solid.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<style>
+    .rating>label::before {
+        content: "\2605";
+        position: absolute;
+        opacity: 100;
+    }
+</style>
+<body>
+    <header class="d-flex flex-nowrap " style="position: fixed;">
+        <div class="d-flex flex-column sidebar-1 flex-shrink-0 p-3 bg-light"
+            style="width: 280px; display:none; height:100vh;">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <svg class="bi pe-none me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+                <img src="../src/logo.svg" class="me-2" alt="logo" width="70%">
+            </a>
+            <hr>
+            <ul class="nav nav-pills gap-3 flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="../admin/home.html" class="nav-link link-dark  " aria-current="page">
+
+
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="../admin/company.html" class="nav-link link-dark  ">
+
+
+                        Companies
+                    </a>
+                </li>
+                <li>
+                    <a href="../admin/orders.html" class="nav-link link-dark">
+
+
+                        Orders
+                    </a>
+                </li>
+                <li>
+                    <a href="../admin/disputie.html" class="nav-link link-dark ">
+
+                        Disputies
+                    </a>
+                </li>
+                <li>
+                    <a href="../admin/payments.html" class="nav-link link-dark">
+
+                        Payments
+                    </a>
+                </li>
+                <li>
+                    <a href="../admin/users.html" class="nav-link link-dark">
+
+                        Users
+                    </a>
+                </li>
+            </ul>
+            <hr>
+            <div class="dropdown">
+                <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../src/avatar.jpg" alt="" width="32" height="32" class="rounded-circle me-2">
+                    <strong>Akintola Tope</strong>
+                </a>
+                <ul class="dropdown-menu text-small shadow">
+
+                    <li><a class="dropdown-item" href="../user/settings.html"><i
+                                class="fa-solid fa-gear p-2"></i>Settings</a></li>
+                    <li><a class="dropdown-item" href="../user/profile.html"><i
+                                class="fa-solid fa-user p-2"></i>Profile</a></li>
+
+                    <li><a class="dropdown-item" href="../landing-page/index.html"> <i class="fa fa-sign-out p-2"
+                                aria-hidden="true"></i> Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="navbar navfix fixed-top navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand col-lg-3 me-0" href="#"><img src="../src/logo.svg" alt="" width="150px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse  justify-content-end" id="navbarSupportedContent">
+                    <ul class="nav nav-pills fs-6 flex-column mb-auto">
+                        <li class="nav-item">
+                            <a href="../admin/home.html" class="nav-link purple-btn  " aria-current="page">
+
+
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../admin/company.html" class="nav-link link-dark  ">
+
+
+                                Companies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../admin/orders.html" class="nav-link link-dark">
+
+
+                                Orders
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../admin/disputie.html" class="nav-link link-dark ">
+
+                                Disputies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../admin/payments.html" class="nav-link link-dark">
+
+                                Payments
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../admin/users.html" class="nav-link link-dark">
+
+                                Users
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+                        <a class="btn btn-rounded login btn-md " href="../landing-page/index.html" role="button"> <i
+                                class="fa fa-sign-out p-2" aria-hidden="true"></i> Sign out</a>
+
+                    </div>
+                    <!-- <a class="btn btn-rounded login btn-md " href="#" role="button"> Login</a> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="d-flex  flex-column flex-shrink-0">
+    
+
+        <div class="row container-fluid justify-content-center pt-5">
+            <section class="row pt-5 align-items-center">
+                <p class="col-lg-3 fw-bold mb-0 fs-5"></p>
+                <div class="col-lg-5 ">
+                    <div class="row justify-content-center bg-light p-2 gap-3 rounded-pill">
+                        <a class="btn col purple  rounded-pill btn-sm " href="../admin/verified.html"
+                            role="button">Verified </a>
+                        <a class="btn col purple rounded-pill  btn-sm " href="../admin/company.html"
+                            role="button">Pending </a>
+                        <a class="btn col purple-btn rounded-pill  btn-sm " href="../admin/disable.html"
+                            role="button">Disabled </a>
+                    </div>
+
+                </div>
+                <div class="col-lg-4">
+                    <div class="row gap-3 justify-content-end">
+                        <div class="col-lg-4">
+                            <select class="form-select border-0" aria-label="Default select example"
+                                style="box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.15);">
+                                <option selected>Sort</option>
+                                <option value="1">Last 7 Days</option>
+                                <option value="2">Last month</option>
+                                <option value="3">Last 6 months</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-5">
+                            <select class="form-select border-0" aria-label="Default select example"
+                                style="box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.15);">
+                                <option selected> Add filter</option>
+                                <option value="1">Last 7 Days</option>
+                                <option value="2">Last month</option>
+                                <option value="3">Last 6 months</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="row justify-content-center pt-5">
+
+                <div class=" row  align-items-center">
+                    <div class="gap-4" style="
+                    display: flex;
+                    flex-direction: column;
+                ">
+                        <div class="row  align-items-center justify-content-center p-3 bg-light rounded-4 " style="
+                        cursor:pointer;">
+                            <div class="col-lg-3 align-items-center">
+                                <img src="../src/user.png" alt="" style="width: 233.18px;
+                            height: 117px;
+                            ">
+                            </div>
+                            <div class="col-lg-7 p-2">
+                                <div class="row">
+                                    <div class="col">
+                                        <p class=" mb-0 fw-bolder">The Hype Logistics</p>
+                                        <p class=" mb-0  item-status"><i class="far fa-eye"></i> Ajah, Lagos</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="rating col justify-content-end ">
+                                            <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                                            <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                            <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                            <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                            <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <p class=" mb-0  item-status text-secondary">Get early feedback on your GSoC proposal.
+                                    Proposals are a lightweight way to start articulating your design ideas and plans
+                                    before going forward with implementation or heavyweight documentation.</p>
+
+                            </div>
+
+                            <div class="col-lg-2 ">
+                                <a class="btn btn-green btn-md green " href="#" role="button">Enable </a>
+                                <i class="fab px-3 fs-5 fa-rocketchat"></i>
+                            </div>
+                        </div>
+                        <div class="row  align-items-center justify-content-center p-3 bg-light rounded-4 " style="
+                        cursor:pointer;">
+                            <div class="col-lg-3 align-items-center">
+                                <img src="../src/user.png" alt="" style="width: 233.18px;
+                            height: 117px;
+                            ">
+                            </div>
+                            <div class="col-lg-7 p-2">
+                                <div class="row">
+                                    <div class="col">
+                                        <p class=" mb-0 fw-bolder">The Hype Logistics</p>
+                                        <p class=" mb-0  item-status"><i class="far fa-eye"></i> Ajah, Lagos</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="rating col justify-content-end ">
+                                            <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                                            <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                            <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                            <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                            <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <p class=" mb-0  item-status text-secondary">Get early feedback on your GSoC proposal.
+                                    Proposals are a lightweight way to start articulating your design ideas and plans
+                                    before going forward with implementation or heavyweight documentation.</p>
+
+                            </div>
+
+                            <div class="col-lg-2 ">
+                                <a class="btn btn-green btn-md green " href="#" role="button">Enable </a>
+                                <i class="fab px-3 fs-5 fa-rocketchat"></i>
+                            </div>
+                        </div>
+                        <div class="row   align-items-center justify-content-center p-3  rounded-4 bg-light" style="
+                        cursor:pointer;">
+                            <div class="col-lg-3 align-items-center">
+                                <img src="../src/user.png" alt="" style="width: 233.18px;
+                            height: 117px;
+                            ">
+                            </div>
+                            <div class="col-lg-7 p-2">
+                                <div class="row">
+                                    <div class="col">
+                                        <p class=" mb-0 fw-bolder">The Hype Logistics</p>
+                                        <p class=" mb-0  item-status"><i class="far fa-eye"></i> Ajah, Lagos</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="rating col justify-content-end ">
+                                            <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                                            <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                            <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                            <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                            <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <p class=" mb-0  item-status text-secondary">Get early feedback on your GSoC proposal.
+                                    Proposals are a lightweight way to start articulating your design ideas and plans
+                                    before going forward with implementation or heavyweight documentation.</p>
+                            </div>
+
+                            <div class="col-lg-2 ">
+                                <a class="btn btn-green btn-md green " href="#" role="button">Enable </a>
+                                <i class="fab px-3 fs-5 fa-rocketchat"></i>
+
+                            </div>
+                        </div>
+                        <div class="row  align-items-center justify-content-center p-3 bg-light rounded-4 " style="
+                        cursor:pointer;">
+                            <div class="col-lg-3 align-items-center">
+                                <img src="../src/user.png" alt="" style="width: 233.18px;
+                            height: 117px;
+                            ">
+                            </div>
+                            <div class="col-lg-7 p-2">
+                                <div class="row">
+                                    <div class="col">
+                                        <p class=" mb-0 fw-bolder">The Hype Logistics</p>
+                                        <p class=" mb-0  item-status"><i class="far fa-eye"></i> Ajah, Lagos</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="rating col justify-content-end ">
+                                            <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                                            <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                            <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                            <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                            <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <p class=" mb-0  item-status text-secondary">Get early feedback on your GSoC proposal.
+                                    Proposals are a lightweight way to start articulating your design ideas and plans
+                                    before going forward with implementation or heavyweight documentation.</p>
+                            </div>
+
+                            <div class="col-lg-2 ">
+                                <a class="btn btn-green btn-md green " href="#" role="button">Enable </a>
+                                <i class="fab px-3 fs-5 fa-rocketchat"></i>
+
+                            </div>
+                        </div>
+                        <div class="row  align-items-center justify-content-center p-3 bg-light rounded-4 " style="
+                        cursor:pointer;">
+                            <div class="col-lg-3 align-items-center">
+                                <img src="../src/user.png" alt="" style="width: 233.18px;
+                            height: 117px;
+                            ">
+                            </div>
+                            <div class="col-lg-7 p-2">
+                                <div class="row">
+                                    <div class="col">
+                                        <p class=" mb-0 fw-bolder">The Hype Logistics</p>
+                                        <p class=" mb-0  item-status"><i class="far fa-eye"></i> Ajah, Lagos</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="rating col justify-content-end ">
+                                            <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+                                            <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                                            <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                                            <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                                            <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <p class=" mb-0  item-status text-secondary">Get early feedback on your GSoC proposal.
+                                    Proposals are a lightweight way to start articulating your design ideas and plans
+                                    before going forward with implementation or heavyweight documentation.</p>
+                            </div>
+
+                            <div class="col-lg-2 ">
+                                <a class="btn btn-green btn-md green " href="#" role="button">Enable </a>
+                                <i class="fab px-3 fs-5 fa-rocketchat"></i>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+
+
+    </main>
+
+
+    <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

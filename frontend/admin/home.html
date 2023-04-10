@@ -1,0 +1,439 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Manrope:wght@400;600;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="../src/logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="../fontawesome-free-6.3.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="../fontawesome-free-6.3.0-web/css/brands.css" rel="stylesheet">
+    <link href="../fontawesome-free-6.3.0-web/css/solid.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/checkmark.css">
+</head>
+
+<body>
+    <header class="d-flex flex-nowrap " style="position: fixed;">
+        <div class="d-flex flex-column sidebar-1 flex-shrink-0 p-3 bg-light"
+            style="width: 280px; display:none; height:100vh;">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <svg class="bi pe-none me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+                <img src="../src/logo.svg" class="me-2" alt="logo" width="70%">
+            </a>
+            <hr>
+            <ul class="nav nav-pills gap-3 flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="../admin/home.html" class="nav-link purple-btn  " aria-current="page">
+
+                     
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="../admin/company.html" class="nav-link link-dark  ">
+                      
+                     
+                        Companies
+                    </a>
+                </li>
+                <li>
+                    <a href="../admin/orders.html" class="nav-link link-dark">
+
+
+                       Orders
+                    </a>
+                </li>
+                <li>
+                    <a href="../admin/disputie.html" class="nav-link link-dark ">
+
+                        Disputies
+                    </a>
+                </li>
+                <li>
+                    <a href="../admin/payments.html" class="nav-link link-dark">
+
+                        Payments
+                    </a>
+                </li>
+                <li>
+                    <a href="../admin/users.html" class="nav-link link-dark">
+
+                        Users
+                    </a>
+                </li>
+            </ul>
+            <hr>
+            <div class="dropdown">
+                <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../src/avatar.jpg" alt="" width="32" height="32" class="rounded-circle me-2">
+                    <strong>Akintola Tope</strong>
+                </a>
+                <ul class="dropdown-menu text-small shadow">
+
+                    <li><a class="dropdown-item" href="../user/settings.html"><i
+                                class="fa-solid fa-gear p-2"></i>Settings</a></li>
+                    <li><a class="dropdown-item" href="../user/profile.html"><i
+                                class="fa-solid fa-user p-2"></i>Profile</a></li>
+
+                    <li><a class="dropdown-item" href="../landing-page/index.html"> <i class="fa fa-sign-out p-2"
+                                aria-hidden="true"></i> Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="navbar navfix fixed-top navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand col-lg-3 me-0" href="#"><img src="../src/logo.svg" alt="" width="150px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse  justify-content-end" id="navbarSupportedContent">
+                    <ul class="nav nav-pills fs-6 flex-column mb-auto">
+                        <li class="nav-item">
+                            <a href="../admin/home.html" class="nav-link link-dark  " aria-current="page">
+        
+                             
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../admin/company.html" class="nav-link link-dark  ">
+                              
+                             
+                                Companies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../admin/orders.html" class="nav-link link-dark">
+        
+        
+                               Orders
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../admin/disputie.html" class="nav-link link-dark ">
+        
+                                Disputies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../admin/payments.html" class="nav-link link-dark">
+        
+                                Payments
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../admin/users.html" class="nav-link link-dark">
+        
+                                Users
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+                        <a class="btn btn-rounded login btn-md " href="../landing-page/index.html" role="button"> <i
+                                class="fa fa-sign-out p-2" aria-hidden="true"></i> Sign out</a>
+
+                    </div>
+                    <!-- <a class="btn btn-rounded login btn-md " href="#" role="button"> Login</a> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="d-flex  flex-column flex-shrink-0" >
+     
+
+        <div class="row container-fluid justify-content-center pt-5">
+            <section class="row gap-3 pt-5 align-items-end">
+                <div class=" row align-items-center gap-3 col-lg-8 ">
+                    <p class="col-lg-2 text-bold fs-4 mb-0">Overview</p>
+                    <div class="col-lg-3">
+                        <select class="form-select " aria-label="Default select example">
+                            <option selected>Currencey</option>
+                            <option value="1">NGN</option>
+                            <option value="2">USD</option>
+                            <option value="3">EUR</option>
+                        </select>
+                    </div>
+                    <!-- <div class="col-lg-3">
+                        <select class="form-select " aria-label="Default select example">
+                            <option selected>location</option>
+                            <option ><div class="row  align-items-center justify-content-center p-3">
+                                <div class="col-lg-4 ">
+                                    <i class="fa fa-location px-2" aria-hidden="true" style="background: rgba(255, 27, 31, 0.1);
+                                        height: 50px;
+                                        width: 50px;
+                                        border-radius: 100px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content:center;
+                                        color:#FF1B1F;"></i>
+
+                                </div>
+                                <div class="col">
+                                    <p class="fw-bold mb-0">Lagos</p>
+                                    <p class=" mb-0 text-secondary">Ajah</p>
+                                </div>
+                                <div class="col-1 align-items-center">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </div></option>
+                            <option value="2"><div
+                                class="row  align-items-center justify-content-center p-3">
+                                <div class="col-lg-4 ">
+                                    <i class="fa fa-location px-2" aria-hidden="true" style="background: rgba(255, 27, 31, 0.1);
+                                        height: 50px;
+                                        width: 50px;
+                                        border-radius: 100px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content:center;
+                                        color:#FF1B1F;"></i>
+
+                                </div>
+                                <div class="col">
+                                    <p class="fw-bold mb-0">Lagos</p>
+                                    <p class=" mb-0 text-secondary">Ajegunle</p>
+                                </div>
+                                <div class="col-1 align-items-center">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </div></option>
+                            <option value="3"><div
+                                class="row  align-items-center justify-content-center p-3 ">
+                                <div class="col-lg-4 ">
+                                    <i class="fa fa-location px-2" aria-hidden="true" style="background: rgba(255, 165, 0, 0.1);
+                                height: 50px;
+                                width: 50px;
+                                border-radius: 100px;
+                                display: flex;
+                                align-items: center;
+                                justify-content:center;
+                                color:#FFA500;"></i>
+
+                                </div>
+                                <div class="col">
+                                    <p class="fw-bold mb-0">Lagos</p>
+                                    <p class=" mb-0 text-secondary">Banana Island</p>
+                                </div>
+                                <div class="col-1 align-items-center">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </div></option>
+                            <option value="4"><div
+                                class="row  align-items-center justify-content-center p-3 ">
+                                <div class="col-lg-4 ">
+                                    <i class="fa fa-location px-2" aria-hidden="true" style="background: rgba(62, 64, 149, 0.1);;
+                                height: 50px;
+                                width: 50px;
+                                border-radius: 100px;
+                                display: flex;
+                                align-items: center;
+                                justify-content:center;
+                                color:#3E4095;"></i>
+
+                                </div>
+                                <div class="col">
+                                    <p class="fw-bold mb-0">Lagos</p>
+                                    <p class=" mb-0 text-secondary">Victoria Island</p>
+                                </div>
+                                <div class="col-1 align-items-center">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </div></option>
+                            <option value="5"><div
+                                class="row  align-items-center justify-content-center p-3 ">
+                                <div class="col-lg-4 ">
+                                    <i class="fa fa-location px-2" aria-hidden="true" style="background: rgba(62, 64, 149, 0.1);;
+                                height: 50px;
+                                width: 50px;
+                                border-radius: 100px;
+                                display: flex;
+                                align-items: center;
+                                justify-content:center;
+                                color:#3E4095;"></i>
+
+                                </div>
+                                <div class="col">
+                                    <p class="fw-bold mb-0">Lagos</p>
+                                    <p class=" mb-0 text-secondary">Yaba</p>
+                                </div>
+                                <div class="col-1 align-items-center">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </div></option>
+                            <option value="6"><div
+                                class="row  align-items-center justify-content-center p-3 ">
+                                <div class="col-lg-4 ">
+                                    <i class="fa fa-location px-2" aria-hidden="true" style="background: rgba(0, 122, 255, 0.1);
+                                height: 50px;
+                                width: 50px;
+                                border-radius: 100px;
+                                display: flex;
+                                align-items: center;
+                                justify-content:center;
+                                color:#007AFF;"></i>
+
+                                </div>
+                                <div class="col">
+                                    <p class="fw-bold mb-0">Lagos</p>
+
+                                    <p class=" mb-0 text-secondary">Ikoyi</p>
+                                </div>
+                                <div class="col-1 align-items-center">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </div></option>
+                            
+                        </select>
+                    </div> -->
+                    
+
+                </div>
+                <div class="col-lg-4">
+                    <div class="row">
+                        <!-- we can remove this since input does a  better job -->
+                        <div class="col">
+                            <select class="form-select " aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">Last 7 Days</option>
+                                <option value="2">Last month</option>
+                                <option value="3">Last 6 months</option>
+                            </select>
+                        </div>
+                        <input type="date" class="col form-control" name="" id="">
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="row pt-5">
+                <div class="col-lg-8 ">
+                    <div class="row  gap-5 border border-0 bg-light rounded-4 p-3 col-lg-12 align-items-center "
+                        style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);">
+
+                        <div class="col-lg-4 ">
+
+                            <img src="../src/discount.svg" class="border border-0 rounded-5 p-3 "
+                                style="background: rgba(8, 219, 54, 0.1);" width="60px" alt="">
+                        </div>
+
+                        <div class="col">
+                            <p class="fw-bolder fs-3  mb-1">498,090</p>
+                            <p class="text-secondary">Total Montly Income</p>
+                        </div>
+
+                        <div class="chart mt-auto">
+                            <div class="chartjs-size-monitor">
+                                <div class="chartjs-size-monitor-expand">
+                                    <div class=""></div>
+                                </div>
+                                <div class="chartjs-size-monitor-shrink">
+                                    <div class=""></div>
+                                </div>
+                            </div>
+                            <canvas id="myChart" style="display: block; height: 331px; width: 662px;" width="1324"
+                                height="662" class="chartjs-render-monitor"> </canvas>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-4">
+                    <div class="row border border-0 bg-light rounded-4 p-5 align-items-center"
+                        style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);">
+                        <div class="col">
+                            <img src="../src/cart.svg" class="border border-0 rounded-5 p-3 "
+                                style="background: rgba(91, 147, 255, 0.1);" width="60px" alt="">
+
+                        </div>
+
+                        <div class="col">
+                            <p class="fw-bolder fs-4  mb-1">909</p>
+                            <p class="text-secondary">Deliveries</p>
+                        </div>
+                    </div>
+
+                    <div class="row border border-0 bg-light  rounded-4 mt-5 p-5 align-items-center"
+                        style="box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);">
+                        <div class="col">
+                            <img src="../src/cart2.svg" class="border border-0 rounded-5 p-3 "
+                                style="background: rgba(255, 195, 39, 0.1);" width="60px" alt="">
+                        </div>
+
+                        <div class="col">
+                            <p class="fw-bolder fs-4  mb-1">6</p>
+                            <p class="text-secondary">Ongoing Deliveries</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+           
+
+        </div>
+
+
+    </main>
+
+
+    <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
+    <script>
+        const ctx = document.getElementById('myChart');
+
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "Oct", "Nov", "Dec"],
+                datasets: [{
+                    label: 'This month',
+                    data: [100000, 150000, 100000, 150000, 100000, 120000, 220342, 100000, 150000, 100000, 150000, 100000],
+                    borderWidth: 3,
+                    borderColor: '#751BD6',
+
+                    tension: 0.3,
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                            lineWidth: 0
+                        }
+
+                    },
+                    x: {
+                        beginAtZero: true,
+                        grid: {
+                            borderColor: "green",
+                            lineWidth: 0,
+                        }
+
+                    }
+                }
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
