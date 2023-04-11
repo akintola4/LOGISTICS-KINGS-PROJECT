@@ -1,0 +1,449 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Manrope:wght@400;600;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="../src/logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="../fontawesome-free-6.3.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="../fontawesome-free-6.3.0-web/css/brands.css" rel="stylesheet">
+    <link href="../fontawesome-free-6.3.0-web/css/solid.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+
+</head>
+
+<body>
+    <header class="d-flex flex-nowrap " style="position: fixed;">
+        <div class="d-flex flex-column sidebar-1 flex-shrink-0 p-3 bg-light"
+            style="width: 280px; display:none; height:100vh;">
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <svg class="bi pe-none me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+                <img src="../src/logo.svg" class="me-2" alt="logo" width="70%">
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="../company/orders.html" class="nav-link purple-btn  " aria-current="page">
+
+                        <i class="fa fa-home me-2" width="16" height="16" aria-hidden="true"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="../company/riders.html" class="nav-link link-dark  ">
+
+                        <i class="fa fa-motorcycle me-2" width="16" height="16" aria-hidden="true"></i>
+
+                        Riders
+                    </a>
+                </li>
+                <li>
+                    <a href="../company/trips.html" class="nav-link link-dark">
+                        <i class="fas fa-box-open me-2 " width="16" height="16" aria-hidden="true"></i>
+
+                        Trips & Packages
+                    </a>
+                </li>
+                <li>
+                    <a href="../company/histroy.html" class="nav-link link-dark ">
+                        <i class="fa fa-history me-2 " width="16" height="16" aria-hidden="true"></i>
+                        History
+                    </a>
+                </li>
+                <li>
+                    <a href="../company/payments.html" class="nav-link link-dark">
+                        <i class="fa-solid fa-money-bill me-2" width="16" height="16" aria-hidden="true"></i>
+                        Payments
+                    </a>
+                </li>
+
+            </ul>
+            <hr>
+            <div class="dropdown">
+                <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="../src/avatar.jpg" alt="" width="32" height="32" class="rounded-circle me-2">
+                    <strong>Akintola Tope</strong>
+                </a>
+                <ul class="dropdown-menu text-small shadow">
+
+                    <li><a class="dropdown-item" href="../user/settings.html"><i
+                                class="fa-solid fa-gear p-2"></i>Settings</a></li>
+                    <li><a class="dropdown-item" href="../user/profile.html"><i
+                                class="fa-solid fa-user p-2"></i>Profile</a></li>
+
+                    <li><a class="dropdown-item" href="../landing-page/index.html"> <i class="fa fa-sign-out p-2"
+                                aria-hidden="true"></i> Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="navbar navfix fixed-top navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand col-lg-3 me-0" href="#"><img src="../src/logo.svg" alt="" width="150px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse  justify-content-end" id="navbarSupportedContent">
+                    <ul class="nav nav-pills fs-6 flex-column mb-auto">
+                        <li class="nav-item">
+                            <a href="../company/orders.html" class="nav-link purple-btn" aria-current="page">
+
+                                <i class="fa fa-home me-2" width="16" height="16" aria-hidden="true"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../company/riders.html" class="nav-link link-dark">
+
+                                <i class="fa fa-motorcycle me-2" width="16" height="16" aria-hidden="true"></i>
+
+                                Riders
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../company/trips.html" class="nav-link  link-dark">
+                                <i class="fas fa-box-open me-2 " width="16" height="16" aria-hidden="true"></i>
+
+                                Trips & Packages
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../company/histroy.html" class="nav-link link-dark ">
+                                <i class="fa fa-history me-2 " width="16" height="16" aria-hidden="true"></i>
+                                History
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../company/payments.html" class="nav-link link-dark">
+                                <i class="fa-solid fa-money-bill me-2" width="16" height="16" aria-hidden="true"></i>
+                                Payments
+                            </a>
+                        </li>
+                        <li class="nav-item py-1">
+                            <a href="../company/settings.html" class="nav-link link-dark">
+
+                                <i class="fa-solid fa-gear me-2" width="16" height="16" aria-hidden="true"></i>
+                                Settings
+                            </a>
+                        </li>
+                        <li class="nav-item py-1">
+                            <a href="../company/profile.html" class="nav-link link-dark">
+
+                                <i class="fa-solid fa-user me-2" width="16" height="16" aria-hidden="true"></i>
+                                Profile
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+                        <a class="btn btn-rounded login btn-md " href="../landing-page/index.html" role="button"> <i
+                                class="fa fa-sign-out p-2" aria-hidden="true"></i> Sign out</a>
+
+                    </div>
+                    <!-- <a class="btn btn-rounded login btn-md " href="#" role="button"> Login</a> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="d-flex  flex-column flex-shrink-0">
+        <div class="bg-purple warning align-items-center row p-1">
+            <p class="text-center">Kindly provide the requested information to fully verify your account. <a class="text-light" href="">Learn More</a> </p>
+        </div>
+        <div class="row content " >
+            <section class="section-1 align-items-center col">
+                <div class="col content-1 ">
+
+                    <div class="col form-body ">
+                      <form class="margin-auto" >
+                          
+                          <div class="position-relative  col-6 m-4" style="
+                          z-index: -1;
+                      ">
+                            <div class="progress" style="height: 1px;">
+                              <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;"></button>
+                            <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary border border-2 rounded-pill" style="width: 2rem; height:2rem;"></button>
+                            <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-light border border-2 rounded-pill" style="width: 2rem; height:2rem;"></button>
+                          </div>
+                        <div class="mb-3" >
+                          <label for="image" class="form-label">Business Account number Must be the same with your company name  </label>
+                          <div class=" " >
+                            
+                            <div class="form-group">
+                                <label class="form-control-label" for="input-last-name">Bank</label>
+                                <select
+                                  id="bankCode"
+                                  name="bankCode"
+                                  class="form-control form-control-alternative"
+                                >
+                                  <option value="">--Select Bank--</option>
+                              
+                                  <option value="801">
+                                    Abbey Mortgage Bank
+                                  </option>
+                              
+                                  <option value="044">
+                                    Access Bank
+                                  </option>
+                              
+                                  <option value="063">
+                                    Access Bank (Diamond)
+                                  </option>
+                              
+                                  <option value="035A">
+                                    ALAT by WEMA
+                                  </option>
+                              
+                                  <option value="401">
+                                    ASO Savings and Loans
+                                  </option>
+                              
+                                  <option value="50931">
+                                    Bowen Microfinance Bank
+                                  </option>
+                              
+                                  <option value="50823">
+                                    CEMCS Microfinance Bank
+                                  </option>
+                              
+                                  <option value="023">
+                                    Citibank Nigeria
+                                  </option>
+                              
+                                  <option value="559">
+                                    Coronation Merchant Bank
+                                  </option>
+                              
+                                  <option value="050">
+                                    Ecobank Nigeria
+                                  </option>
+                              
+                                  <option value="562">
+                                    Ekondo Microfinance Bank
+                                  </option>
+                              
+                                  <option value="50126">
+                                    Eyowo
+                                  </option>
+                              
+                                  <option value="070">
+                                    Fidelity Bank
+                                  </option>
+                              
+                                  <option value="51314">
+                                    Firmus MFB
+                                  </option>
+                              
+                                  <option value="011">
+                                    First Bank of Nigeria
+                                  </option>
+                              
+                                  <option value="214">
+                                    First City Monument Bank
+                                  </option>
+                              
+                                  <option value="501">
+                                    FSDH Merchant Bank Limited
+                                  </option>
+                              
+                                  <option value="00103">
+                                    Globus Bank
+                                  </option>
+                              
+                                  <option value="058">
+                                    Guaranty Trust Bank
+                                  </option>
+                              
+                                  <option value="51251">
+                                    Hackman Microfinance Bank
+                                  </option>
+                              
+                                  <option value="50383">
+                                    Hasal Microfinance Bank
+                                  </option>
+                              
+                                  <option value="030">
+                                    Heritage Bank
+                                  </option>
+                              
+                                  <option value="51244">
+                                    Ibile Microfinance Bank
+                                  </option>
+                              
+                                  <option value="50457">
+                                    Infinity MFB
+                                  </option>
+                              
+                                  <option value="301">
+                                    Jaiz Bank
+                                  </option>
+                              
+                                  <option value="082">
+                                    Keystone Bank
+                                  </option>
+                              
+                                  <option value="50211">
+                                    Kuda Bank
+                                  </option>
+                              
+                                  <option value="90052">
+                                    Lagos Building Investment Company Plc.
+                                  </option>
+                              
+                                  <option value="50563">
+                                    Mayfair MFB
+                                  </option>
+                              
+                                  <option value="50304">
+                                    Mint MFB
+                                  </option>
+                              
+                                  <option value="565">
+                                    One Finance
+                                  </option>
+                              
+                                  <option value="999991">
+                                    PalmPay
+                                  </option>
+                              
+                                  <option value="526">
+                                    Parallex Bank
+                                  </option>
+                              
+                                  <option value="311">
+                                    Parkway - ReadyCash
+                                  </option>
+                              
+                                  <option value="999992">
+                                    Paycom
+                                  </option>
+                              
+                                  <option value="50746">
+                                    Petra Mircofinance Bank Plc
+                                  </option>
+                              
+                                  <option value="076">
+                                    Polaris Bank
+                                  </option>
+                              
+                                  <option value="101">
+                                    Providus Bank
+                                  </option>
+                              
+                                  <option value="502">
+                                    Rand Merchant Bank
+                                  </option>
+                              
+                                  <option value="125">
+                                    Rubies MFB
+                                  </option>
+                              
+                                  <option value="51310">
+                                    Sparkle Microfinance Bank
+                                  </option>
+                              
+                                  <option value="221">
+                                    Stanbic IBTC Bank
+                                  </option>
+                              
+                                  <option value="068">
+                                    Standard Chartered Bank
+                                  </option>
+                              
+                                  <option value="232">
+                                    Sterling Bank
+                                  </option>
+                              
+                                  <option value="100">
+                                    Suntrust Bank
+                                  </option>
+                              
+                                  <option value="302">
+                                    TAJ Bank
+                                  </option>
+                              
+                                  <option value="51211">
+                                    TCF MFB
+                                  </option>
+                              
+                                  <option value="102">
+                                    Titan Bank
+                                  </option>
+                              
+                                  <option value="032">
+                                    Union Bank of Nigeria
+                                  </option>
+                              
+                                  <option value="033">
+                                    United Bank For Africa
+                                  </option>
+                              
+                                  <option value="215">
+                                    Unity Bank
+                                  </option>
+                              
+                                  <option value="566">
+                                    VFD Microfinance Bank Limited
+                                  </option>
+                              
+                                  <option value="035">
+                                    Wema Bank
+                                  </option>
+                              
+                                  <option value="057">
+                                    Zenith Bank
+                                  </option>
+                                </select>
+                              </div>
+                          </div> 
+                         
+                        </div>
+                        
+                        <div class="mb-3" >
+                             <div class=" " >
+                              
+                           <input type="text" name="" class="form-control" placeholder="account number" id="">
+                        
+                            </div> 
+                           
+                          </div>
+                        <a href="../company/orders.html" class="btn col-12 btn-lg rounded-3 login " >Next</a>
+                      </form>
+                      
+                    </div>  
+                    
+                  </div>
+            </section>
+            <section class="section-2 content-2 col">
+                <output id="list"  ></output>
+                
+            </section>
+
+        </div>
+
+
+    </main>
+
+    <script src="../javscripts/upload.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
