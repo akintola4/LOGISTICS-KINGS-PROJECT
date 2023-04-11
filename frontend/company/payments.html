@@ -236,8 +236,32 @@
                 <div class="col-lg-7">
                     <div class="row pt-3">
                         <div class="col">
-                            <a class="btn col btn-purple purple w-100 rounded-3" href="#" role="button">Request Withdrawal
-                            </a>
+                        
+                            <!-- Modal trigger button -->
+                            <button type="button" class="btn col btn-purple purple w-100 rounded-3" data-bs-toggle="modal" data-bs-target="#modalId">
+                                Request Withdrawal
+                            </button>
+                            
+                            <!-- Modal Body -->
+                            <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+                            <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body text-center">
+                                                <img src="../src/check.png" width="50%" alt="">
+                                                <p class="text-bold fs-5">Withdrawal confirmed </p>
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
                         </div>
                         <div class="col">
                             <a class="btn col btn-purple purple w-100 rounded-3" href="#" role="button">Download CSV
