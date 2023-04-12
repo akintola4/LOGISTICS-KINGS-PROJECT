@@ -425,7 +425,32 @@
                             </div> 
                            
                           </div>
-                        <a href="../company/orders.html" class="btn col-12 btn-lg rounded-3 login " >Next</a>
+                      
+                        <!-- Modal trigger button -->
+                        <button type="button" class="btn col-12 btn-lg rounded-3 login" data-bs-toggle="modal" data-bs-target="#modalId">
+                          Next
+                      </button>
+                      
+                      <!-- Modal Body -->
+                      <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+                      <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md" role="document">
+                              <div class="modal-content">
+
+                                  <div class="modal-body text-center">
+                                      <img src="../src/check.png" width="50%" alt="">
+                                      <p>Documents recieved 🎉</p>
+                                      <p>Manual review will take 24-48 hours</p>
+                                  </div>
+                                  <div class="modal-footer">
+                                    
+                                     <a class="btn btn-purple col btn-md " href="../company/orders.html"  role="button">Go to
+                                      home </a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      
                       </form>
                       
                     </div>  
