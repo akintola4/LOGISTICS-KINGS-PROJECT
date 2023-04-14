@@ -202,9 +202,10 @@
                         <thead>
                             <tr class=" border-main">
                                 <th> <a class="btn btn btn-light btn-sm " href="#" role="button">Latest Packages <button type="button" class="btn text-dark" data-bs-dismiss="modal"> <i class="fa fa-close" aria-hidden="true"></i></button> </a></th>
-                                <th scope="col">Company</th>
-                                <th scope="col">Package No.</th>
-                                <th scope="col">Package ID</th>
+                                <th scope="col">Item</th>
+                                <th scope="col">Pickup</th> 
+                                <th scope="col">Delivery</th>
+                                <th scope="col">Vehicle</th>
                                 <th scope="col">Date Assigned</th>
                                 <th scope="col">Action</th>
 
@@ -212,12 +213,81 @@
                         </thead>
                         <tbody>
 
-                            <tr class=" border-main">
+                            <tr class=" border-main " style="background:rgba(27, 47, 236, 0.36);
+                            border-radius: 12px;">
 
-                                <td><i class="fa-regular fa-user p-2"></i>Dominic Praise</td>
-                                <td class="p-3"> The Hype</td>
-                                <td class="p-3"> 09078622374</td>
-                                <td class="p-3">ID78490338</td>
+                            <td><img src="../src/avatar.jpg" alt="" width="32" height="32"
+                                class="rounded-circle me-2">Dominic Praise</td>
+                                <td class="">
+                                    <button type="button" class="btn rounded-3" data-bs-toggle="modal" data-bs-target="#modalView" role="button"
+                                    style="background: rgba(12, 70, 211, 0.1);; color: #0C46D3;">
+                                    view
+                                </button>
+                            <!-- Modal trigger button -->
+                           
+                            
+                            <!-- Modal Body -->
+                            <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+                            <div class="modal fade" id="modalView" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalToggleLabel2">PACKAGE SUMMARY</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="col bg-light rounded-4 p-2">
+                                                <div class="row py-2 px-4">
+                                                    <p class="col">Name of sender</p>
+                                                    <p class="col text-end">Akin Tobi</p>
+                                                </div>
+                                                <div class="row py-2 px-4">
+                                                    <p class="col">Address of sender</p>
+                                                    <p class="col text-end">Ajah, Lagos</p>
+                                                </div>
+                                                <div class="row py-2 px-4">
+                                                    <p class="col">Number of sender</p>
+                                                    <p class="col text-end">08069090901</p>
+                                                </div>
+                                                <div class="row py-2 px-4">
+                                                    <p class="col">Package ID</p>
+                                                    <p class="col text-end">ID983993</p>
+                                                </div>
+                                                <div class="row py-2 px-4">
+                                                    <p class="col">Date Assigned</p>
+                                                    <p class="col text-end">03 July, 2023</p>
+                                                </div>
+                                                <div class="row py-2 px-4">
+                                                    <p class="col">Name of reciever</p>
+                                                    <p class="col text-end">Dominic Praise</p>
+                                                </div>
+                                                <div class="row py-2 px-4">
+                                                    <p class="col">Address of reciever</p>
+                                                    <p class="col text-end">APT 3, Cele Ejirin Ogun State</p>
+                                                </div>
+                                                <div class="row py-2 px-4">
+                                                    <p class="col">Number of Reciever</p>
+                                                    <p class="col text-end">09035068975</p>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="text-center">
+                                                <img src="../src/item.png" width="50%" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn col" data-bs-dismiss="modal"
+                                                style="background: rgba(47, 95, 183, 0.04);">close</button>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </td>
+                                <td class="p-3"> ikeja</td>
+                                <td class="p-3"> ikorodu</td>
+                                <td class="p-3">Motorcycle</td>
                                 <td class="p-3">03 Feb, 2023</td>
 
                                 <td>
@@ -333,17 +403,410 @@
                                     </div>
                                     <button type="button" class="btn rounded-3" data-bs-toggle="modal"
                                         href="#exampleModalToggle" role="button"
-                                        style="background: #E0EFFF; color: #0C46D3;">
+                                        style="background: rgba(12, 70, 211, 0.1);; color: #0C46D3;">
                                         Assign Package
                                     </button>
 
                                 </td>
-                                <td><a href="../company/chat.html" class="link-dark"><i
-                                            class="fa-regular fa-message p-2"></i></a>
+                                <td><a href="../company/chat.html" class="link-dark"><i class="fa-brands fa-rocketchat fs-4 m-2"></i></a>
                                 </td>
                             </tr>
+                            <tr class=" border-main " style="background:rgba(239, 73, 69, 0.34);;
+                            border-radius: 12px;">
+
+                            <td><img src="../src/avatar.jpg" alt="" width="32" height="32"
+                                class="rounded-circle me-2">Dominic Praise</td>
+                                <td class="">
+                                    <button type="button" class="btn rounded-3" data-bs-toggle="modal" data-bs-target="#modalView" role="button"
+                                    style="background: rgba(12, 70, 211, 0.1);; color: #0C46D3;">
+                                    view
+                                </button>
+                            <!-- Modal trigger button -->
+                           
+                            
+                            <!-- Modal Body -->
+                            <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+                            <div class="modal fade" id="modalView" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalToggleLabel2">PACKAGE SUMMARY</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="col bg-light rounded-4 p-2">
+                                                <div class="row py-2 px-4">
+                                                    <p class="col">Name of sender</p>
+                                                    <p class="col text-end">Akin Tobi</p>
+                                                </div>
+                                                <div class="row py-2 px-4">
+                                                    <p class="col">Address of sender</p>
+                                                    <p class="col text-end">Ajah, Lagos</p>
+                                                </div>
+                                                <div class="row py-2 px-4">
+                                                    <p class="col">Number of sender</p>
+                                                    <p class="col text-end">08069090901</p>
+                                                </div>
+                                                <div class="row py-2 px-4">
+                                                    <p class="col">Package ID</p>
+                                                    <p class="col text-end">ID983993</p>
+                                                </div>
+                                                <div class="row py-2 px-4">
+                                                    <p class="col">Date Assigned</p>
+                                                    <p class="col text-end">03 July, 2023</p>
+                                                </div>
+                                                <div class="row py-2 px-4">
+                                                    <p class="col">Name of reciever</p>
+                                                    <p class="col text-end">Dominic Praise</p>
+                                                </div>
+                                                <div class="row py-2 px-4">
+                                                    <p class="col">Address of reciever</p>
+                                                    <p class="col text-end">APT 3, Cele Ejirin Ogun State</p>
+                                                </div>
+                                                <div class="row py-2 px-4">
+                                                    <p class="col">Number of Reciever</p>
+                                                    <p class="col text-end">09035068975</p>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="text-center">
+                                                <img src="../src/item.png" width="50%" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn col" data-bs-dismiss="modal"
+                                                style="background: rgba(47, 95, 183, 0.04);">close</button>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </td>
+                                <td class="p-3"> ikeja</td>
+                                <td class="p-3"> ikorodu</td>
+                                <td class="p-3">Motorcycle</td>
+                                <td class="p-3">03 Feb, 2023</td>
+
+                                <td>
 
 
+                                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Assign Package</h5>
+                                                    <button type="button" class="btn" data-bs-dismiss="modal"> <i
+                                                            class="fa fa-close" aria-hidden="true"></i></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="mb-3">
+                                                        <select class="form-select" aria-label="Default select example">
+                                                            <option selected>Select Rider</option>
+                                                            <option value="1">BOLA</option>
+                                                            <option value="2">DAVID</option>
+                                                            <option value="3">AKINLOYE</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn col" data-bs-dismiss="modal"
+                                                        style="background: rgba(47, 95, 183, 0.04);">Cancel</button>
+                                                    <button class="btn btn-primary text-light col"
+                                                        data-bs-target="#exampleModalToggle2"
+                                                        data-bs-toggle="modal">Assign
+                                                        Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                                        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalToggleLabel2">PACKAGE SUMMARY</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="col bg-light rounded-4 p-2">
+                                                        <div class="row py-2 px-4">
+                                                            <p class="col">Name of sender</p>
+                                                            <p class="col text-end">Akin Tobi</p>
+                                                        </div>
+                                                        <div class="row py-2 px-4">
+                                                            <p class="col">Address of sender</p>
+                                                            <p class="col text-end">Ajah, Lagos</p>
+                                                        </div>
+                                                        <div class="row py-2 px-4">
+                                                            <p class="col">Number of sender</p>
+                                                            <p class="col text-end">08069090901</p>
+                                                        </div>
+                                                        <div class="row py-2 px-4">
+                                                            <p class="col">Package ID</p>
+                                                            <p class="col text-end">ID983993</p>
+                                                        </div>
+                                                        <div class="row py-2 px-4">
+                                                            <p class="col">Date Assigned</p>
+                                                            <p class="col text-end">03 July, 2023</p>
+                                                        </div>
+                                                        <div class="row py-2 px-4">
+                                                            <p class="col">Name of reciever</p>
+                                                            <p class="col text-end">Dominic Praise</p>
+                                                        </div>
+                                                        <div class="row py-2 px-4">
+                                                            <p class="col">Address of reciever</p>
+                                                            <p class="col text-end">APT 3, Cele Ejirin Ogun State</p>
+                                                        </div>
+                                                        <div class="row py-2 px-4">
+                                                            <p class="col">Number of Reciever</p>
+                                                            <p class="col text-end">09035068975</p>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn col" data-bs-dismiss="modal"
+                                                        style="background: rgba(47, 95, 183, 0.04);">close</button>
+                                                    <button class="btn btn-primary text-light col"
+                                                        data-bs-target="#exampleModalToggle3"
+                                                        data-bs-toggle="modal">Confirm Package</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="exampleModalToggle3" aria-hidden="true"
+                                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+
+                                                <div class="modal-body text-center">
+                                                    <img src="../src/check.png" width="50%" alt="">
+                                                    <p>Delivery Confirmed 🎉</p>
+                                                    <p>Congratulations! You have successfully assigned package ID
+                                                        983993LOG to “Dominic Praise”</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn col" data-bs-dismiss="modal"
+                                                        style="background: rgba(47, 95, 183, 0.04);">Go to
+                                                        Dashboard</button>
+                                                    <button class="btn btn-primary text-light col"
+                                                        
+                                                        data-bs-toggle="modal">Track Delivery</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn rounded-3" data-bs-toggle="modal"
+                                        href="#exampleModalToggle" role="button"
+                                        style="background: rgba(12, 70, 211, 0.1);; color: #0C46D3;">
+                                        Assign Package
+                                    </button>
+
+                                </td>
+                                <td><a href="../company/chat.html" class="link-dark"><i class="fa-brands fa-rocketchat fs-4 m-2"></i></a>
+                                </td>
+                            </tr>
+                            <tr class=" border-main " style="background:rgba(16, 167, 17, 0.25);;
+                            border-radius: 12px;">
+
+                            <td><img src="../src/avatar.jpg" alt="" width="32" height="32"
+                                class="rounded-circle me-2">Dominic Praise</td>
+                                <td class="">
+                                    <button type="button" class="btn rounded-3" data-bs-toggle="modal" data-bs-target="#modalView" role="button"
+                                    style="background: rgba(12, 70, 211, 0.1);; color: #0C46D3;">
+                                    view
+                                </button>
+                            <!-- Modal trigger button -->
+                           
+                            
+                            <!-- Modal Body -->
+                            <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+                            <div class="modal fade" id="modalView" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalToggleLabel2">PACKAGE SUMMARY</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="col bg-light rounded-4 p-2">
+                                                <div class="row py-2 px-4">
+                                                    <p class="col">Name of sender</p>
+                                                    <p class="col text-end">Akin Tobi</p>
+                                                </div>
+                                                <div class="row py-2 px-4">
+                                                    <p class="col">Address of sender</p>
+                                                    <p class="col text-end">Ajah, Lagos</p>
+                                                </div>
+                                                <div class="row py-2 px-4">
+                                                    <p class="col">Number of sender</p>
+                                                    <p class="col text-end">08069090901</p>
+                                                </div>
+                                                <div class="row py-2 px-4">
+                                                    <p class="col">Package ID</p>
+                                                    <p class="col text-end">ID983993</p>
+                                                </div>
+                                                <div class="row py-2 px-4">
+                                                    <p class="col">Date Assigned</p>
+                                                    <p class="col text-end">03 July, 2023</p>
+                                                </div>
+                                                <div class="row py-2 px-4">
+                                                    <p class="col">Name of reciever</p>
+                                                    <p class="col text-end">Dominic Praise</p>
+                                                </div>
+                                                <div class="row py-2 px-4">
+                                                    <p class="col">Address of reciever</p>
+                                                    <p class="col text-end">APT 3, Cele Ejirin Ogun State</p>
+                                                </div>
+                                                <div class="row py-2 px-4">
+                                                    <p class="col">Number of Reciever</p>
+                                                    <p class="col text-end">09035068975</p>
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="text-center">
+                                                <img src="../src/item.png" width="50%" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn col" data-bs-dismiss="modal"
+                                                style="background: rgba(47, 95, 183, 0.04);">close</button>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </td>
+                                <td class="p-3"> ikeja</td>
+                                <td class="p-3"> ikorodu</td>
+                                <td class="p-3">Motorcycle</td>
+                                <td class="p-3">03 Feb, 2023</td>
+
+                                <td>
+
+
+                                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Assign Package</h5>
+                                                    <button type="button" class="btn" data-bs-dismiss="modal"> <i
+                                                            class="fa fa-close" aria-hidden="true"></i></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="mb-3">
+                                                        <select class="form-select" aria-label="Default select example">
+                                                            <option selected>Select Rider</option>
+                                                            <option value="1">BOLA</option>
+                                                            <option value="2">DAVID</option>
+                                                            <option value="3">AKINLOYE</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn col" data-bs-dismiss="modal"
+                                                        style="background: rgba(47, 95, 183, 0.04);">Cancel</button>
+                                                    <button class="btn btn-primary text-light col"
+                                                        data-bs-target="#exampleModalToggle2"
+                                                        data-bs-toggle="modal">Assign
+                                                        Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                                        aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalToggleLabel2">PACKAGE SUMMARY</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="col bg-light rounded-4 p-2">
+                                                        <div class="row py-2 px-4">
+                                                            <p class="col">Name of sender</p>
+                                                            <p class="col text-end">Akin Tobi</p>
+                                                        </div>
+                                                        <div class="row py-2 px-4">
+                                                            <p class="col">Address of sender</p>
+                                                            <p class="col text-end">Ajah, Lagos</p>
+                                                        </div>
+                                                        <div class="row py-2 px-4">
+                                                            <p class="col">Number of sender</p>
+                                                            <p class="col text-end">08069090901</p>
+                                                        </div>
+                                                        <div class="row py-2 px-4">
+                                                            <p class="col">Package ID</p>
+                                                            <p class="col text-end">ID983993</p>
+                                                        </div>
+                                                        <div class="row py-2 px-4">
+                                                            <p class="col">Date Assigned</p>
+                                                            <p class="col text-end">03 July, 2023</p>
+                                                        </div>
+                                                        <div class="row py-2 px-4">
+                                                            <p class="col">Name of reciever</p>
+                                                            <p class="col text-end">Dominic Praise</p>
+                                                        </div>
+                                                        <div class="row py-2 px-4">
+                                                            <p class="col">Address of reciever</p>
+                                                            <p class="col text-end">APT 3, Cele Ejirin Ogun State</p>
+                                                        </div>
+                                                        <div class="row py-2 px-4">
+                                                            <p class="col">Number of Reciever</p>
+                                                            <p class="col text-end">09035068975</p>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn col" data-bs-dismiss="modal"
+                                                        style="background: rgba(47, 95, 183, 0.04);">close</button>
+                                                    <button class="btn btn-primary text-light col"
+                                                        data-bs-target="#exampleModalToggle3"
+                                                        data-bs-toggle="modal">Confirm Package</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="exampleModalToggle3" aria-hidden="true"
+                                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+
+                                                <div class="modal-body text-center">
+                                                    <img src="../src/check.png" width="50%" alt="">
+                                                    <p>Delivery Confirmed 🎉</p>
+                                                    <p>Congratulations! You have successfully assigned package ID
+                                                        983993LOG to “Dominic Praise”</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn col" data-bs-dismiss="modal"
+                                                        style="background: rgba(47, 95, 183, 0.04);">Go to
+                                                        Dashboard</button>
+                                                    <button class="btn btn-primary text-light col"
+                                                        
+                                                        data-bs-toggle="modal">Track Delivery</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn rounded-3" data-bs-toggle="modal"
+                                        href="#exampleModalToggle" role="button"
+                                        style="background: rgba(12, 70, 211, 0.1);; color: #0C46D3;">
+                                        Assign Package
+                                    </button>
+
+                                </td>
+                                <td><a href="../company/chat.html" class="link-dark"><i class="fa-brands fa-rocketchat fs-4 m-2"></i></a>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
