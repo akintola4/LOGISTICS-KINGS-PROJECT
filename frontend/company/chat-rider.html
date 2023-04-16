@@ -1,3 +1,4 @@
+
 <html lang="en">
 
 <head>
@@ -44,7 +45,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="../company/riders.html" class="nav-link link-dark">
+                    <a href="../company/riders.html" class="nav-link purple-btn">
 
                         <i class="fa fa-motorcycle me-2" width="16" height="16" aria-hidden="true"></i>
 
@@ -52,7 +53,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="../company/trips.html" class="nav-link  purple-btn">
+                    <a href="../company/trips.html" class="nav-link  link-dark">
                         <i class="fas fa-box-open me-2 " width="16" height="16" aria-hidden="true"></i>
 
                         Trips & Packages
@@ -164,8 +165,18 @@
         <div class="row container justify-content-center pt-5">
             <section class="row pb-5">
                 <div class="col-10">
-                    <p class="fw-bold fs-4">Hey Akintola 👋</p>
-                    <p>Here is an overview of your activities.</p>
+                    <div class=" row  align-items-center">
+                        <div class="profile row align-items-center">
+                            <div class="profile-avatar col-1">
+                                <img src="../src/avatar.jpg" alt="" width="50px" class="rounded-circle me-2">
+                            </div>
+                            <div class="profile-title col-lg-2" >
+                                <p class="text-secondary mb-1">Obiabo Immanuel</p>
+                                
+                            </div>
+                        
+                        </div>
+                    </div>
                 </div>
                 <div class="col-2 align-items-end">
                     <button type="button" class="btn outline-dark position-relative"  id="liveToastBtn">
@@ -235,31 +246,14 @@
 
                 <div class="row gap-5 align-items-center justify-content-between ">
 
-                    <div class="profile row align-items-center justify-content-evenly">
-
-                        <div class="profile-title col-lg-4">
-                            <div class="row justify-content-center" style="width: 211px;"> 
-                       
-                                <p class="mb-0">Uploaded by customer </p>
-                                <img src="../src/item.png" alt="" width=" 211px" class=" me-2">
-                            </div>
-                           
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="row justify-content-center" style="width: 211px;"> 
-                       
-                                <p class="mb-0">Uploaded by Rider   </p>
-                                <img src="../src/item.png" alt="" width=" 211px" class=" me-2">
-                            </div>
-                        </div>
-                    </div>
+                
                     <div class="">
                         <div class="chats " id="chats">
                             <div class="chat-history gap-3 ">
                                 <div class="sender d-flex flex-row justify-content-start mb-4">
                                     <p class="bg-light row rounded-4 p-3 col-lg-6  ">
                                         <label class="senderName" for=""><i class="fa-regular fa-user p-2"></i>
-                                           Customer</label>
+                                           Rider</label>
                                         Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra maliquet
                                         amet,
                                         ut consectetur diam urna sed. Cras odio eu cursus aiaculis. Sagittis etiam enim quis
@@ -283,7 +277,7 @@
                                 <div class="sender d-flex flex-row justify-content-start mb-4">
                                     <p class="bg-light row rounded-4 p-3 col-lg-6  ">
                                         <label class="senderName" for=""><i class="fa-regular fa-user p-2"></i>
-                                            Customer</label>
+                                            Rider</label>
                                         Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra maliquet
                                         amet,
                                         ut consectetur diam urna sed. Cras odio eu cursus aiaculis. Sagittis etiam enim quis
@@ -294,13 +288,17 @@
                                 </div>
                             </div>                 
                         </div>
+                        
                     </div>
                     <div class="chat-input  gap-2 justify-content-center align-items-center row">
+                            
+                        <a class="btn col-lg-1 btn-purple btn-lg  "   role="button"> <i class="fa-solid fa-phone  " style="color:#5932EA;"></i></a>
+                    
                     <div class="col-lg-8"><textarea class="w-100"  id="myTextarea" ></textarea>
                         
                     </div>
                     
-                        <a class="btn btn-success  col-lg-1 btn-lg " onclick="addSenderChat()"  role="button"><i class="fa fa-paper-plane"
+                        <a class="btn btn-success  col-lg-1 btn-lg " onclick="addAdminChat() "  role="button"><i class="fa fa-paper-plane"
                                 aria-hidden="true"></i> </a>
                     
 
