@@ -188,7 +188,9 @@ border-bottom: 30px #fff solid ;
 .card{
     position: inherit;
 }
-
+.mobile-info{
+    display: none;
+}
 @media (max-width:900px) {
 
     .sidebar-1 {
@@ -227,5 +229,8 @@ border-bottom: 30px #fff solid ;
    .fs-12{
     font-size: 12px;
    }
-
+.mobile-info{
+    display: block;
+    font-weight: 700;
+}
 }
