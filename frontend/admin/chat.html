@@ -297,29 +297,29 @@
 
                 </div>
 
-
+                <section class=" position-fixed bottom-0">
+                    <div class="chat-input row gap-2 justify-content-between align-content-center bg-light">
+    
+    
+                        <!-- Modal trigger button -->
+                        <button type="button" class="btn btn-green col-2 btn-lg" data-bs-toggle="modal"
+                            data-bs-target="#modalId" style="font-size: 12px;">
+                            CLOSE DISPUTE
+                        </button>
+    
+                        <!-- Modal Body -->
+                        <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    
+                        <textarea class="col-6" id="myTextarea"></textarea>
+    
+                        <a class="btn btn-outline-success align-items-center d-flex justify-content-center  col-2  m-0 btn-md"
+                            onclick="addAdminChat() " role="button">
+                            <i class="fa fa-paper-plane " aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </section>
             </section>
-            <section class=" position-fixed bottom-0">
-                <div class="chat-input row gap-2 justify-content-between align-content-center bg-light">
-
-
-                    <!-- Modal trigger button -->
-                    <button type="button" class="btn btn-green col-2 btn-lg" data-bs-toggle="modal"
-                        data-bs-target="#modalId" style="font-size: 12px;">
-                        CLOSE DISPUTE
-                    </button>
-
-                    <!-- Modal Body -->
-                    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-
-                    <textarea class="col-6" id="myTextarea"></textarea>
-
-                    <a class="btn btn-outline-success align-items-center d-flex justify-content-center  col-2  m-0 btn-md"
-                        onclick="addAdminChat() " role="button">
-                        <i class="fa fa-paper-plane " aria-hidden="true"></i>
-                    </a>
-                </div>
-            </section>
+         
         </div>
 
         <div class="modal " id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
