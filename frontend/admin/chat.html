@@ -25,7 +25,7 @@
 </head>
 
 <body>
-    <header class="d-flex flex-nowrap " style="position: fixed;">
+    <header class="d-flex flex-nowrap position-fixed">
         <div class="d-flex flex-column sidebar-1 flex-shrink-0 p-3 bg-light"
             style="width: 280px; display:none; height:100vh;">
             <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
@@ -75,7 +75,7 @@
                         Payments
                     </a>
                 </li>
-              
+
             </ul>
             <hr>
             <div class="dropdown">
@@ -157,12 +157,12 @@
         </nav>
     </header>
 
-    <main class="d-flex  flex-column flex-shrink-0">
+    <main class="">
 
 
-        <div class="row container justify-content-center pt-5">
+        <div class="row container-fluid justify-content-center pt-5">
             <section class="row pt-3">
-                <div class="col-8">
+                <div class="col-lg-8 pb-3">
                     <div class="row align-items-center justify-content-center " style="
                     cursor:pointer;">
                         <div class="col-lg-3 align-items-center">
@@ -207,33 +207,33 @@
                     </div>
                 </div>
             </section>
-            <section class="row  pt-5">
+            <section class="row  pt-5  pb-5 p-0">
 
-                <div class="row gap-5 align-items-center justify-content-between ">
+                <div class="row gap-5 align-items-center justify-content-between m-0">
 
-                    <div class="profile row align-items-center justify-content-evenly">
+                    <div class="profile justify-content-center row align-items-center justify-content-evenly">
 
-                        <div class="profile-title col-lg-4">
-                            <div class="row justify-content-center" style="width: 211px;">
+                        <div class="profile-title col-6">
+                            <div class="row justify-content-center" >
 
                                 <p class="mb-0">Uploaded by customer </p>
-                                <img src="../src/item.png" alt="" width=" 211px" class=" me-2">
+                                <img src="../src/item.png" alt=""  class="col-lg-6 me-2">
                             </div>
 
                         </div>
-                        <div class="col-lg-4">
-                            <div class="row justify-content-center" style="width: 211px;">
+                        <div class="col-6">
+                            <div class="row justify-content-center" >
 
                                 <p class="mb-0">Uploaded by Rider </p>
-                                <img src="../src/item.png" alt="" width=" 211px" class=" me-2">
+                                <img src="../src/item.png" alt=""  class="col-lg-6 me-2">
                             </div>
                         </div>
                     </div>
                     <div class="">
                         <div class="chats " id="chats">
                             <div class="chat-history gap-3 ">
-                                <div class="sender d-flex flex-row justify-content-start mb-4">
-                                    <p class="bg-light row rounded-4 p-3 col-lg-6  ">
+                                <div class="d-flex flex-row justify-content-start mb-4">
+                                    <p class="sender  bg-light row rounded-4 p-3 col-lg-6  ">
                                         <label class="senderName" for=""><i class="fa-regular fa-user p-2"></i>
                                             A-logistics COMPANY </label>
                                         Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra
@@ -247,8 +247,8 @@
                                     </p>
 
                                 </div>
-                                <div class="sender d-flex flex-row justify-content-start mb-4">
-                                    <p class="bg-light row rounded-4 p-3 col-lg-6  ">
+                                <div class="d-flex flex-row justify-content-start mb-4">
+                                    <p class="sender  bg-light row rounded-4 p-3 col-lg-6  ">
                                         <label class="senderName" for=""><i class="fa-regular fa-user p-2"></i>
                                             Dominic</label>
                                         Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra
@@ -262,8 +262,8 @@
                                     </p>
 
                                 </div>
-                                <div class="sender d-flex flex-row justify-content-start mb-4">
-                                    <p class="bg-light row rounded-4 p-3 col-lg-6  ">
+                                <div class="d-flex flex-row justify-content-start mb-4">
+                                    <p class="sender  bg-light row rounded-4 p-3 col-lg-6  ">
                                         <label class="senderName" for=""><i class="fa-regular fa-user p-2"></i>
                                             A-logistics COMPANY</label>
                                         Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra
@@ -277,10 +277,10 @@
                                     </p>
 
                                 </div>
-                                <div class="user d-flex flex-row justify-content-end mb-4">
-                                    <p class="bg-light row rounded-4 p-3 col-lg-6  ">
-                                        <label class="userName" for=""><i class="fa-regular fa-user p-2"></i> MODERATOR
-                                            TOSIN</label>
+                                <div class=" d-flex flex-row justify-content-end  mb-4">
+                                    <p class=" user bg-light row rounded-4 p-3   purple-btn col-lg-6  ">
+                                        <label class="userName" for=""> MODERATOR
+                                            TOSIN <i class="fa-regular fa-user p-2"></i></label>
                                         Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra
                                         maliquet
                                         amet,
@@ -293,49 +293,51 @@
                                 </div>
                             </div>
                         </div>
-                        
-                        <div class="chat-input  gap-2 justify-content-center align-items-center row">
-                            <div class="col-2 p-0" style="font-size: 8px;">
-                           
-                                <!-- Modal trigger button -->
-                                <button type="button" class="btn btn-green btn-md" data-bs-toggle="modal" data-bs-target="#modalId">
-                                    CLOSE DISPUTE
-                                </button>
-                                
-                                <!-- Modal Body -->
-                                <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
-                                <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                
-                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body text-center">
-                                                <img src="../src/check.png" width="50%" alt="">
-                                                <p class="text-bold fs-5">Dispute closed </p>
-                                            </div>
-                                           
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                
-                          
-                        </div>
-                        <div class="col-8"><textarea class="w-100"  id="myTextarea" ></textarea>
-                        </div>
-                            <a class="btn btn-success  col-1 btn-lg " onclick="addAdminChat() "  role="button"><i class="fa fa-paper-plane"
-                                    aria-hidden="true"></i> </a>
                     </div>
-                    </div>
+
                 </div>
 
 
             </section>
+            <section class=" position-fixed bottom-0">
+                <div class="chat-input row gap-2 justify-content-between align-content-center bg-light">
 
+
+                    <!-- Modal trigger button -->
+                    <button type="button" class="btn btn-green col-2 btn-lg" data-bs-toggle="modal"
+                        data-bs-target="#modalId" style="font-size: 12px;">
+                        CLOSE DISPUTE
+                    </button>
+
+                    <!-- Modal Body -->
+                    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+
+                    <textarea class="col-6" id="myTextarea"></textarea>
+
+                    <a class="btn btn-outline-success align-items-center d-flex justify-content-center  col-2  m-0 btn-md"
+                        onclick="addAdminChat() " role="button">
+                        <i class="fa fa-paper-plane " aria-hidden="true"></i>
+                    </a>
+                </div>
+            </section>
         </div>
 
+        <div class="modal " id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+            aria-labelledby="modalTitleId" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img src="../src/check.png" width="50%" alt="">
+                        <p class="text-bold fs-5">Dispute closed </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
     </main>
 

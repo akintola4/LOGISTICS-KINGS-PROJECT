@@ -146,7 +146,7 @@
         </div>
 
         <div class="row container justify-content-center pt-5">
-            <section class="row">
+            <section class="row pt-3">
                 <p class="col-lg-8 fs-3">Chat </p>
                 <div class="col-lg-4">
                     <div class="row">
@@ -164,7 +164,7 @@
                     </div>
                 </div>
             </section>
-            <section class="row  pt-5">
+            <section class="row pb-5 p-0 pt-5">
 
                 <div class="row gap-5 align-items-center justify-content-between ">
 
@@ -178,11 +178,11 @@
                             <img src="../src/avatar.jpg" alt="" width="50px" class="rounded-circle me-2">
                         </div>
                     </div>
-                    <div class="">
+                    <div class="pb-3">
                         <div class="chats " id="chats">
                             <div class="chat-history gap-3 ">
-                                <div class="sender d-flex flex-row justify-content-start mb-4">
-                                    <p class="bg-light row rounded-4 p-3 col-lg-6  ">
+                                <div class=" d-flex flex-row justify-content-start mb-4">
+                                    <p class="sender bg-light row rounded-4 p-3 col-lg-6  ">
                                         <label class="senderName" for=""><i class="fa-regular fa-user p-2"></i>
                                             Sender</label>
                                         Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra maliquet
@@ -193,9 +193,9 @@
                                     </p>
     
                                 </div>
-                                <div class="user d-flex flex-row justify-content-end mb-4">
-                                    <p class="bg-light row rounded-4 p-3 col-lg-6  ">
-                                        <label class="userName" for=""><i class="fa-regular fa-user p-2"></i> User</label>
+                                <div class=" d-flex flex-row justify-content-end mb-4">
+                                    <p class="bg-light user purple-btn row rounded-4 p-3 col-lg-6  ">
+                                        <label class="userName" for="">User<i class="fa-regular fa-user p-2"></i> </label>
                                         Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra maliquet
                                         amet,
                                         ut consectetur diam urna sed. Cras odio eu cursus aiaculis. Sagittis etiam enim quis
@@ -211,15 +211,33 @@
                     </div>
                    
                     </div>
-                    <div class="chat-input gap-2  justify-content-center align-items-center row">
-                        <div class="col-lg-2 "  style="font-size: 8px;">
-                           
+               
+                    <section class=" position-fixed bottom-0">
+                        <div class="chat-input row gap-2  align-content-center bg-light">
+        
+        
                             <!-- Modal trigger button -->
-                            <button type="button" class="btn btn-outline-warning btn-md" data-bs-toggle="modal" data-bs-target="#modalId">
+                            <button type="button" class="btn btn-outline-warning p-0 col-2 btn-lg" data-bs-toggle="modal"
+                                data-bs-target="#modalId" style="font-size: 12px;">
                                 START A DISPUTE 
                             </button>
-                            
+        
                             <!-- Modal Body -->
+                            <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+        
+                            <textarea class="col-6" id="myTextarea"></textarea>
+        
+                            <a class="btn btn-outline-success align-items-center d-flex justify-content-center  col-2  m-0 btn-md"
+                            onclick="addUserChat() "  role="button">
+                                <i class="fa fa-paper-plane " aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </section>
+            </section>
+          
+            
+        </div>
+             <!-- Modal Body -->
                             <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
                             <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
@@ -236,29 +254,6 @@
                                     </div>
                                 </div>
                             </div>
-                            
-                            
-                            <!-- Optional: Place to the bottom of scripts -->
-                            <script>
-                                const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
-                            
-                            </script>
-                    </div>
-                   
-                    <div class="col-7 p-0"><textarea class="w-100"  id="myTextarea" ></textarea>
-                        
-                    </div>
-                    
-                        <a class="btn btn-success  col-2 btn-lg " onclick="addRiderChat() "  role="button"><i class="fa fa-paper-plane"
-                                aria-hidden="true"></i> </a>
-                    
-
-                </div>
-
-            </section>
-
-        </div>
-
 
     </main>
 

@@ -11,8 +11,7 @@ function addUserChat() {
     
     div.classList.add("user", "d-flex", "flex-row", "justify-content-end", "mb-4")
     let para = document.createElement('p')
-    para.classList.add("bg-light", "row", "rounded-4", "p-3", "col-lg-6")
-
+    para.classList.add("bg-light", "row","purple-btn", "user", "rounded-4", "p-3", "col-lg-6")
     let label = document.createElement('label')
     label.classList.add("userName")
     label.innerText = "User"
@@ -37,8 +36,7 @@ function addSenderChat() {
     
     div.classList.add("user", "d-flex", "flex-row", "justify-content-end", "mb-4")
     let para = document.createElement('p')
-    para.classList.add("bg-light", "row", "rounded-4", "p-3", "col-lg-6")
-
+    para.classList.add("bg-light", "row","purple-btn", "user", "rounded-4", "p-3", "col-lg-6")
     let label = document.createElement('label')
     label.classList.add("userName")
     label.innerText = "Sender"
@@ -62,9 +60,9 @@ function addAdminChat() {
     console.log(chatInput)
     let div = document.createElement('div')
     
-    div.classList.add("user", "d-flex", "flex-row", "justify-content-end", "mb-4")
+    div.classList.add( "d-flex", "flex-row", "justify-content-end", "mb-4")
     let para = document.createElement('p')
-    para.classList.add("bg-light", "row", "rounded-4", "p-3", "col-lg-6")
+    para.classList.add("bg-light", "row","purple-btn", "user", "rounded-4", "p-3", "col-lg-6")
 
     let label = document.createElement('label')
     label.classList.add("userName")
@@ -92,8 +90,7 @@ function addRiderChat() {
     
     div.classList.add("user", "d-flex", "flex-row", "justify-content-end", "mb-4")
     let para = document.createElement('p')
-    para.classList.add("bg-light", "row", "rounded-4", "p-3", "col-lg-6")
-
+    para.classList.add("bg-light", "row","purple-btn", "user", "rounded-4", "p-3", "col-lg-6")
     let label = document.createElement('label')
     label.classList.add("userName")
     label.innerText = "RIDER TOSIN"

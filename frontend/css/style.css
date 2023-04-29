@@ -191,6 +191,10 @@ border-bottom: 30px #fff solid ;
 .mobile-info{
     display: none;
 }
+.chat-input{
+    width: 80%
+}
+
 @media (max-width:900px) {
 
     .sidebar-1 {
@@ -232,5 +236,14 @@ border-bottom: 30px #fff solid ;
 .mobile-info{
     display: block;
     font-weight: 700;
+}
+.chat-input{
+    width: 100%
+}
+.user{
+    width: 80%;
+}
+.sender{
+    width: 80%;
 }
 }

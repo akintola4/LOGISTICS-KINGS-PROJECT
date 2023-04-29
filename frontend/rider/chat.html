@@ -125,44 +125,19 @@
             </div>
         </nav>
     </header>
-
     <main class="d-flex  flex-column flex-shrink-0">
 
 
-        <div class="row container justify-content-center pt-5">
-            <section class="row pt-3">
-                <div class="col-8">
-
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="row">
-
-                        <input type="date" class="col form-control" name="" id="">
-                        <!-- we can remove this since input does a  better job -->
-                        <div class="col">
-                            <select class="form-select " aria-label="Default select example">
-                                <option selected>Open this select menu</option>
-                                <option value="1">Last 7 Days</option>
-                                <option value="2">Last month</option>
-                                <option value="3">Last 6 months</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="row  pt-5">
-
+        <div class="row container-fluid p-0 pt-5">
+            <section class="row  pt-5 pb-5 ">
                 <div class="row gap-5 align-items-center justify-content-between ">
-
-
                     <div class="">
                         <div class="chats " id="chats">
                             <div class="chat-history gap-3 ">
-
-
-                                <div class="sender d-flex flex-row justify-content-start mb-4">
-                                    <p class="bg-light row rounded-4 p-3 col-lg-6  ">
+                              
+                              
+                                <div class=" d-flex flex-row justify-content-start mb-4">
+                                    <p class="sender bg-light row rounded-4 p-3 col-lg-6  ">
                                         <label class="senderName" for=""><i class="fa-regular fa-user p-2"></i>
                                             A-logistics COMPANY</label>
                                         Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra
@@ -176,10 +151,9 @@
                                     </p>
 
                                 </div>
-                                <div class="user d-flex flex-row justify-content-end mb-4">
-                                    <p class="bg-light row rounded-4 p-3 col-lg-6  ">
-                                        <label class="userName" for=""><i class="fa-regular fa-user p-2"></i> RIDER
-                                            TOSIN</label>
+                                <div class="d-flex flex-row justify-content-end mb-4">
+                                    <p class="user  bg-light purple-btn  row rounded-4 p-3 col-lg-6  ">
+                                        <label class="userName" for=""> RIDER TOSIN<i class="fa-regular fa-user p-2"></i></label>
                                         Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra
                                         maliquet
                                         amet,
@@ -190,8 +164,8 @@
                                         Curabitur mi nunc neque. Vitae elit pellentesque non a cursus dolor egestas.
                                     </p>
                                 </div>
-                                <div class="sender d-flex flex-row justify-content-start mb-4">
-                                    <p class="bg-light row rounded-4 p-3 col-lg-6  ">
+                                <div class=" d-flex flex-row justify-content-start mb-4">
+                                    <p class="sender bg-light row rounded-4 p-3 col-lg-6  ">
                                         <label class="senderName" for=""><i class="fa-regular fa-user p-2"></i>
                                             A-logistics COMPANY</label>
                                         Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra
@@ -205,10 +179,9 @@
                                     </p>
 
                                 </div>
-                                <div class="user d-flex flex-row justify-content-end mb-4">
-                                    <p class="bg-light row rounded-4 p-3 col-lg-6  ">
-                                        <label class="userName" for=""><i class="fa-regular fa-user p-2"></i> RIDER
-                                            TOSIN</label>
+                                <div class="d-flex flex-row justify-content-end mb-4">
+                                    <p class="user  bg-light purple-btn  row rounded-4 p-3 col-lg-6  ">
+                                        <label class="userName" for=""> RIDER TOSIN<i class="fa-regular fa-user p-2"></i></label>
                                         Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra
                                         maliquet
                                         amet,
@@ -221,30 +194,26 @@
                                 </div>
                             </div>
                         </div>
+               
                     </div>
-                    <div class="chat-input  gap-2 justify-content-center align-items-center row">
-                            
-                        <a class="btn col-2 btn-purple btn-lg  "   role="button"> <i class="fa-solid fa-phone  " style="color:#5932EA;"></i></a>
-                    
-                    <div class="col-7"><textarea class="w-100"  id="myTextarea" ></textarea>
-                        
-                    </div>
-                    
-                        <a class="btn btn-success  col-2 btn-lg " onclick="addRiderChat() "  role="button"><i class="fa fa-paper-plane"
-                                aria-hidden="true"></i> </a>
-                    
-    
                 </div>
-                </div>
-          
+                </section>
+            <section class=" position-fixed bottom-0">
+                <div class="chat-input row gap-2 align-content-center bg-light">
+                    <a class="btn btn-purple align-items-center d-flex justify-content-center  col-2  m-0 btn-md"
+                 role="button">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </a>
+                    <textarea class="col-7" id="myTextarea"></textarea>
 
+                    <a class="btn btn-outline-success align-items-center d-flex justify-content-center  col-2  m-0 btn-md"
+                    onclick="addRiderChat() " role="button">
+                        <i class="fa fa-paper-plane " aria-hidden="true"></i>
+                    </a>
+                </div>
             </section>
-
         </div>
-
-
     </main>
-
     <script src="../javscripts/chat.js"></script>
     <script src="../bootstrap/js/bootstrap.bundle.js"></script>
 </body>
