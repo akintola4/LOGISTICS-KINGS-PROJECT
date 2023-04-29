@@ -9,7 +9,7 @@ function addUserChat() {
     let chatInput = document.getElementById("myTextarea").value;
     let div = document.createElement('div')
     
-    div.classList.add("user", "d-flex", "flex-row", "justify-content-end", "mb-4")
+    div.classList.add( "d-flex", "flex-row", "justify-content-end", "mb-4")
     let para = document.createElement('p')
     para.classList.add("bg-light", "row","purple-btn", "user", "rounded-4", "p-3", "col-lg-6")
     let label = document.createElement('label')
@@ -34,7 +34,7 @@ function addSenderChat() {
     console.log(chatInput)
     let div = document.createElement('div')
     
-    div.classList.add("user", "d-flex", "flex-row", "justify-content-end", "mb-4")
+    div.classList.add( "d-flex", "flex-row", "justify-content-end", "mb-4")
     let para = document.createElement('p')
     para.classList.add("bg-light", "row","purple-btn", "user", "rounded-4", "p-3", "col-lg-6")
     let label = document.createElement('label')
@@ -88,7 +88,7 @@ function addRiderChat() {
     console.log(chatInput)
     let div = document.createElement('div')
     
-    div.classList.add("user", "d-flex", "flex-row", "justify-content-end", "mb-4")
+    div.classList.add( "d-flex", "flex-row", "justify-content-end", "mb-4")
     let para = document.createElement('p')
     para.classList.add("bg-light", "row","purple-btn", "user", "rounded-4", "p-3", "col-lg-6")
     let label = document.createElement('label')
