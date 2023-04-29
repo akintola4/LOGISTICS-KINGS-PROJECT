@@ -242,72 +242,82 @@
                 </div>
 
             </section>
-            <section class="row  pt-3">
+            <section class="row  pt-5  pb-5 p-0">
 
-                <div class="row gap-5 align-items-center justify-content-between ">
+                <div class="row gap-5 align-items-center justify-content-between m-0">
 
-                
+                    <div class="profile justify-content-center row align-items-center justify-content-evenly">
+
+                        <div class="profile-title col-6">
+                            <div class="row justify-content-center" >
+
+                                <p class="mb-0">Uploaded by customer </p>
+                                <img src="../src/item.png" alt=""  class="col-lg-6 me-2">
+                            </div>
+
+                        </div>
+                        <div class="col-6">
+                            <div class="row justify-content-center" >
+
+                                <p class="mb-0">Uploaded by Rider </p>
+                                <img src="../src/item.png" alt=""  class="col-lg-6 me-2">
+                            </div>
+                        </div>
+                    </div>
                     <div class="">
                         <div class="chats " id="chats">
                             <div class="chat-history gap-3 ">
-                                <div class="sender d-flex flex-row justify-content-start mb-4">
-                                    <p class="bg-light row rounded-4 p-3 col-lg-6  ">
-                                        <label class="senderName" for=""><i class="fa-regular fa-user p-2"></i>
-                                           Rider</label>
-                                        Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra maliquet
-                                        amet,
-                                        ut consectetur diam urna sed. Cras odio eu cursus aiaculis. Sagittis etiam enim quis
-                                        eulectus commo vel scelerisqe nibh. Risus, magnis ornare vitae volutpat eget auctor.
-                                        Curabitur mi nunc neque. Vitae elit pellentesque non a cursus dolor egestas.
-                                    </p>
-    
-                                </div>
-                               
-                             
-                                <div class="user d-flex flex-row justify-content-end mb-4">
-                                    <p class="bg-light row rounded-4 p-3 col-lg-6  ">
-                                        <label class="userName" for=""><i class="fa-regular fa-user p-2"></i>  MODERATOR   TOSIN</label>
-                                        Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra maliquet
-                                        amet,
-                                        ut consectetur diam urna sed. Cras odio eu cursus aiaculis. Sagittis etiam enim quis
-                                        eulectus commo vel scelerisqe nibh. Risus, magnis ornare vitae volutpat eget auctor.
-                                        Curabitur mi nunc neque. Vitae elit pellentesque non a cursus dolor egestas.
-                                    </p>
-                                </div>
-                                <div class="sender d-flex flex-row justify-content-start mb-4">
-                                    <p class="bg-light row rounded-4 p-3 col-lg-6  ">
+                   
+                                <div class="d-flex flex-row justify-content-start mb-4">
+                                    <p class="sender  bg-light row rounded-4 p-3 col-lg-6  ">
                                         <label class="senderName" for=""><i class="fa-regular fa-user p-2"></i>
                                             Rider</label>
-                                        Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra maliquet
+                                        Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra
+                                        maliquet
                                         amet,
-                                        ut consectetur diam urna sed. Cras odio eu cursus aiaculis. Sagittis etiam enim quis
-                                        eulectus commo vel scelerisqe nibh. Risus, magnis ornare vitae volutpat eget auctor.
+                                        ut consectetur diam urna sed. Cras odio eu cursus aiaculis. Sagittis etiam enim
+                                        quis
+                                        eulectus commo vel scelerisqe nibh. Risus, magnis ornare vitae volutpat eget
+                                        auctor.
                                         Curabitur mi nunc neque. Vitae elit pellentesque non a cursus dolor egestas.
                                     </p>
-    
+
                                 </div>
-                            </div>                 
+                                <div class=" d-flex flex-row justify-content-end  mb-4">
+                                    <p class=" user bg-light row rounded-4 p-3   purple-btn col-lg-6  ">
+                                        <label class="userName" for="">  A-logistics COMPANY <i class="fa-regular fa-user p-2"></i></label>
+                                        Hello, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra
+                                        maliquet
+                                        amet,
+                                        ut consectetur diam urna sed. Cras odio eu cursus aiaculis. Sagittis etiam enim
+                                        quis
+                                        eulectus commo vel scelerisqe nibh. Risus, magnis ornare vitae volutpat eget
+                                        auctor.
+                                        Curabitur mi nunc neque. Vitae elit pellentesque non a cursus dolor egestas.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        
                     </div>
-                    <div class="chat-input  gap-2 justify-content-center align-items-center row">
-                            
-                        <a class="btn col-2 btn-purple btn-lg  "   role="button"> <i class="fa-solid fa-phone  " style="color:#5932EA;"></i></a>
-                    
-                    <div class="col-7"><textarea class="w-100"  id="myTextarea" ></textarea>
-                        
-                    </div>
-                    
-                        <a class="btn btn-success  col-2 btn-lg " onclick="addAdminChat() "  role="button"><i class="fa fa-paper-plane"
-                                aria-hidden="true"></i> </a>
-                    
 
                 </div>
+
+                <section class=" position-fixed bottom-0">
+                    <div class="chat-input row gap-2 justify-content-between align-content-center bg-light">
+                        <a class="btn btn-purple align-items-center d-flex justify-content-center  col-2  m-0 btn-md"
+                   role="button">
+                        <i class="fa fa-phone " aria-hidden="true"></i>
+                    </a>
+                        <textarea class="col-7" id="myTextarea"></textarea>
+    
+                        <a class="btn btn-outline-success align-items-center d-flex justify-content-center  col-2  m-0 btn-md"
+                            onclick="addCompanyChat() " role="button">
+                            <i class="fa fa-paper-plane " aria-hidden="true"></i>
+                        </a>
                     </div>
-                   
-
+                </section>
             </section>
-
+         
         </div>
 
 
